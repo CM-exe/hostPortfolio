@@ -1,0 +1,38 @@
+import { Button, buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
+import { CodeseeIcon } from "./icons/CodeseeIcon";
+import { cn } from "@/lib/utils";
+import { GithubIcon } from "./icons/GithubIcon";
+import { SearchX } from 'lucide-react';
+
+export const Header = () => {
+    return(
+    <header className="sticky top-0 py-4 w-full">
+        <section className="inline-flex items-baseline w-full px-40 m-auto">
+            <h1 className="text-lg font-bold font-caption text-primary ml-0 mr-4">Clémo.com</h1>
+            <ul className="flex items-center gap-2 mr-auto ml-0">
+                <Link href={"/about"} className={cn(buttonVariants({ variant: "outline"}), "size-6 w-auto p-2")}>
+                    <SearchX />
+                    About me
+                </Link>
+            </ul>
+            <ul className="flex items-center gap-2 mr-0 ml-auto">
+                <Button className="size-6 w-auto p-2" variant="outline">Home</Button>
+                <Link
+                href="/"
+                className={cn(buttonVariants({ variant: "outline"}), "size-6 w-auto p-2")}>
+                    <CodeseeIcon size={16} className="text-foreground" />
+                    About
+                </Link>
+                <Link
+                href="https://github.com/CM-exe"
+                className={cn(buttonVariants({ variant: "outline"}), "size-6 w-auto p-2")}>
+                    <GithubIcon size={16} className="text-foreground" />
+                    Github
+                </Link>
+            </ul>
+        </section>
+    </header>
+
+    );
+};
