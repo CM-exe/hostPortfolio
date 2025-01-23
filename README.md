@@ -6,6 +6,8 @@ Ce projet est un portfolio développé en utilisant Next.js (React) et Tailwind 
 ## Technologies Utilisées
 - **Next.js** : Un framework React pour le développement de sites web statiques et dynamiques.
 - **Tailwind CSS** : Un framework CSS utilitaire pour un design rapide et réactif.
+- ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) : Un framework React pour le développement de sites web statiques et dynamiques.
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) : Un framework CSS utilitaire pour un design rapide et réactif.
 
 ## Fonctionnalités
 - Présentation de mes compétences et expériences
