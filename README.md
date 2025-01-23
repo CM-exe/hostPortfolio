@@ -32,7 +32,7 @@ Ce projet est un portfolio développé en utilisant Next.js (React) et Tailwind 
 5. Ouvrez votre navigateur et accédez à `http://localhost:3000`.
 
 ## Auteur
-- **Votre Nom** - [Votre GitHub](https://github.com/CM-exe)
+- **Clément MOURGUE** - [CM-exe](https://github.com/CM-exe)
 
 ## Licence
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
