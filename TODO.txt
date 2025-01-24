@@ -1,0 +1,1 @@
+Projet -> Logo en grand au milieu gsap fait que lors du scroll va sur le côté et tourne puis traverse et reviens au milieu quand terminé

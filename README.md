@@ -22,7 +22,7 @@ Ce projet est un portfolio développé en utilisant Next.js (React) et Tailwind 
     ```
 2. Accédez au répertoire du projet :
     ```bash
-    cd portfolio_mourgue_
+    cd portfolio_mourgue
 3. Installez les dépendances :
     ```bash
     npm install
