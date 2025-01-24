@@ -1,7 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Section } from "./Section"
 import { Code, GitCompareArrows } from "lucide-react";
-import Link from "next/link";
+import { TransitionLink } from "./TransitionLink";
+import { cn } from "@/lib/utils";
 
 export const Laravel = (props: {size?: number}) => (
     <svg xmlns="http://www.w3.org/2000/svg" width={props.size} viewBox="0 0 24 24" {...props}>
@@ -39,7 +40,7 @@ type ProjectProps = {
 
 const Project = (props: ProjectProps) => {
     return (
-        <Link href={props.url} className="p-2 inline-flex gap-4 items-center hover:bg-accent/10 rounded-sm">
+        <TransitionLink href={props.url} className={cn('p-2 inline-flex gap-4 items-center hover:bg-accent/10 rounded-sm')}>
             <span className="bg-accent p-4 rounded-sm">
                 <props.icone />
             </span>
@@ -47,7 +48,7 @@ const Project = (props: ProjectProps) => {
                 <h3 className="test-lg text-accent-foreground">{props.title}</h3>
                 <p className="text-sm text-muted-foreground">{props.description}</p>
             </div>
-        </Link>
+        </TransitionLink>
     );
 }; 
 

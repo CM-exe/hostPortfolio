@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
 
-  /* // Références pour le logo et le texte
+  // Références pour le logo et le texte
   const logoRef = useRef(null);
   const textRef = useRef(null);
 
@@ -47,7 +47,7 @@ export default function Home() {
     const marginRight = 20; // Marge entre le logo et le bord droit
     const maxX = windowWidth/2 - marginRight - 100; // 100px étant la largeur du logo
 
-    const maxY = windowHeight/2 - 50; // 50px étant la hauteur du logo
+    const maxY = windowHeight/2 - 200; // 50px étant la hauteur du logo
 
     const handleScroll = () => {
       if (!hasScrolled) {
@@ -63,6 +63,7 @@ export default function Home() {
             end: "top 30%",    // Quand le haut du logo atteint 30% de la fenêtre
             scrub: true,  // Animation liée au scroll
             markers: false,  // Afficher les marqueurs (optionnel)
+            once: true,  // Ne pas répéter l'animation
           },
         });
 
@@ -76,6 +77,7 @@ export default function Home() {
             end: "top 30%",    // Quand le haut du texte atteint 30% de la fenêtre
             scrub: true,  // Animation liée au scroll
             markers: false,  // Afficher les marqueurs (optionnel)
+            once: true,  // Ne pas répéter l'animation
           },
         });
       } else {
@@ -91,63 +93,19 @@ export default function Home() {
             end: "top 30%",    // Quand le haut du logo atteint 30% de la fenêtre
             scrub: false,  // Animation liée au scroll
             markers: false,  // Afficher les marqueurs (optionnel)
-            once: true,  // Ne pas répéter l'animation
           },
         });
       }
     };
 
     // Écouter le premier événement de scroll
-    window.addEventListener('scroll', handleScroll, { once: true });
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('scroll', handleScroll); // Nettoyer l'écouteur
     };
 
-  }, [windowWidth, windowHeight, hasScrolled]); // Recalcule l'animation quand la largeur de la fenêtre change */
-
-  // Références pour le logo et le texte
-  const logoRef = useRef(null);
-  const textRef = useRef(null);
-
-  // State pour gérer le premier scroll
-  const [hasScrolled, setHasScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (hasScrolled) return; // Si déjà scrolé une fois, on ne fait rien
-      setHasScrolled(true); // Marque que le premier scroll a eu lieu
-
-      const logo = logoRef.current;
-      const text = textRef.current;
-
-      // Animation du logo
-      logo.classList.add('animate-logo');
-
-      // Animation du texte
-      if (text) {
-        text.classList.add('animate-text');
-      }
-
-      // Animation du logo qui tourne en continu après le premier scroll
-      const rotationInterval = setInterval(() => {
-        if (logo) {
-          logo.style.transform = `rotate(${parseInt(logo.style.transform.replace('rotate(', '').replace('deg)', ''), 10) + 1}deg)`;
-        }
-      }, 10);
-
-      // Nettoyer l'intervalle lorsque la page défile plus loin
-      return () => {
-        clearInterval(rotationInterval);
-      };
-    };
-
-    window.addEventListener('scroll', handleScroll, { once: true });
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [hasScrolled]);
+  }, [windowWidth, windowHeight, hasScrolled]); // Recalcule l'animation quand la largeur de la fenêtre change
 
   return (
     <main>
@@ -163,7 +121,7 @@ export default function Home() {
             <div className="h-[200vh]"></div> */}
       <div
         ref={logoRef}
-        className="absolute top-40 left-1/2 transform -translate-x-1/2 transition-all duration-300"
+        className="fixed top-40 left-1/2 transform -translate-x-1/2 transition-all duration-300"
       >
         <LaravelIcon size={100} />
       </div>
