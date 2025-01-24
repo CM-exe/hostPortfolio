@@ -3,7 +3,7 @@ import { Section } from "./Section";
 import { LaravelIcon } from "./icons/LaravelIcon";
 import { cn } from "@/lib/utils";
 
-const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) => {
+export const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) => {
     return (
         <span className={cn("font-mono bg-accent/30 hover:bg-accent/50 border transition-colors text-primary border-accent px-1 py-0.5 rounded-sm inline-flex items-center gap-1 w-auto", className)} {...props} />
     );
