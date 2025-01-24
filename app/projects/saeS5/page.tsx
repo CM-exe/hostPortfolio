@@ -17,7 +17,7 @@ export default function Home() {
       <Spacer size="xs" />
       <Section>
             <h2 className="font-caption text-4xl text-center">PROJET DE SAÉ S5</h2>
-            <h4 className="font-caption text-2xl mb-3">La <Code>SAÉ</Code> est une Situation d'Apprentissage Évalué qui a lieu durant les études de BUT Informatique</h4>
+            <h4 className="font-caption text-2xl mb-3">La <Code>SAÉ</Code> est une Situation d&apos;Apprentissage Évalué qui a lieu durant les études de BUT Informatique</h4>
             <p>
                 Écrire du <Code><LaravelIcon size={16}></LaravelIcon>code</Code>
             </p>

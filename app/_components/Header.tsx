@@ -3,7 +3,7 @@ import Link from "next/link";
 import { CodeseeIcon } from "./icons/CodeseeIcon";
 import { cn } from "@/lib/utils";
 import { GithubIcon } from "./icons/GithubIcon";
-import { SearchX, House } from 'lucide-react';
+import { House } from 'lucide-react';
 
 export const Header = () => {
     return(

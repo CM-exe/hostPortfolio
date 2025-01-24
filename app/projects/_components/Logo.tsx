@@ -3,10 +3,11 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const Logo = (props: { src ?: string, size ?: number }) => {
+export const Logo = (props: { src ?: string, size ?: string }) => {
   const logoRef = useRef(null);
 
   useEffect(() => {
@@ -36,7 +37,7 @@ export const Logo = (props: { src ?: string, size ?: number }) => {
   }, []);
 
   return (
-    <img
+    <Image
       ref={logoRef}
       src={props.src || "/logo.svg"}
       alt={props.src || "/logo.svg"}

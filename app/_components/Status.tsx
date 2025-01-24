@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Section } from "./Section"
-import { Code, Disc3, GitCompareArrows, LucideIcon } from "lucide-react";
+import { Code, GitCompareArrows } from "lucide-react";
 import Link from "next/link";
 
 export const Laravel = (props: {size?: number}) => (
@@ -11,19 +11,19 @@ export const Laravel = (props: {size?: number}) => (
 
 const PROJECTS = [
     {
-        logo: Laravel.bind(null, {size: 24}),
+        icone: Laravel.bind(null, {size: 24}),
         title: "Project SAÉ S5",
         description: "Description of project SAÉ S5",
         url: "/projects/saeS5",
     },
     {
-        logo: Code,
+        icone: Code,
         title: "Project 2",
         description: "Description of project 2",
         url: "https://example.com",
     },
     {
-        logo: GitCompareArrows,
+        icone: GitCompareArrows,
         title: "Project 3",
         description: "Description of project 3",
         url: "https://example.com",
@@ -31,7 +31,7 @@ const PROJECTS = [
 ];
 
 type ProjectProps = {
-    logo: LucideIcon,
+    icone: React.ComponentType<{ size?: number }>, // Adjusted to allow size prop
     title: string,
     description: string,
     url: string,
@@ -41,7 +41,7 @@ const Project = (props: ProjectProps) => {
     return (
         <Link href={props.url} className="p-2 inline-flex gap-4 items-center hover:bg-accent/10 rounded-sm">
             <span className="bg-accent p-4 rounded-sm">
-                <props.logo />
+                <props.icone />
             </span>
             <div>
                 <h3 className="test-lg text-accent-foreground">{props.title}</h3>
