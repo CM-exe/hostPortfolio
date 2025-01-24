@@ -1,40 +1,36 @@
-# Portfolio Project
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Description
-Ce projet est un portfolio développé en utilisant Next.js (React) et Tailwind CSS. L'objectif est de créer un site web personnel pour présenter mes compétences, projets et expériences professionnelles.
+## Getting Started
 
-## Technologies Utilisées
-- **Next.js** : Un framework React pour le développement de sites web statiques et dynamiques.
-- **Tailwind CSS** : Un framework CSS utilitaire pour un design rapide et réactif.
-- ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) : Un framework React pour le développement de sites web statiques et dynamiques.
-- ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) : Un framework CSS utilitaire pour un design rapide et réactif.
+First, run the development server:
 
-## Fonctionnalités
-- Présentation de mes compétences et expériences
-- Galerie de projets avec descriptions et liens
-- Formulaire de contact
-- Design réactif et moderne
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Installation et Utilisation
-1. Clonez le dépôt :
-    ```bash
-    git clone https://github.com/CM-exe/portfolio.git
-    ```
-2. Accédez au répertoire du projet :
-    ```bash
-    cd portfolio_mourgue
-3. Installez les dépendances :
-    ```bash
-    npm install
-    ```
-4. Démarrez le serveur de développement :
-    ```bash
-    npm run dev
-    ```
-5. Ouvrez votre navigateur et accédez à `http://localhost:3000`.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Auteur
-- **Clément MOURGUE** - [CM-exe](https://github.com/CM-exe)
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Licence
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
