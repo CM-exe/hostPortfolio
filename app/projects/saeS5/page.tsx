@@ -4,22 +4,15 @@ import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Header } from "../../_components/Header";
-import { Code } from "../../_components/Hero";
 import { Section } from "../../_components/Section";
 import { Spacer } from "../../_components/Spacer";
 import { LaravelIcon } from "../../_components/icons/LaravelIcon";
-import { Metadata } from 'next';
-import { Logo } from "../_components/Logo";
 
 gsap.registerPlugin(ScrollTrigger);
- 
-const metadata: Metadata = {
-  title: 'Clément MOURGUE - Projects - SAÉ S5',
-};
 
 export default function Home() {
 
-  // Références pour le logo et le texte
+  /* // Références pour le logo et le texte
   const logoRef = useRef(null);
   const textRef = useRef(null);
 
@@ -111,7 +104,50 @@ export default function Home() {
       window.removeEventListener('scroll', handleScroll); // Nettoyer l'écouteur
     };
 
-  }, [windowWidth, windowHeight, hasScrolled]); // Recalcule l'animation quand la largeur de la fenêtre chang
+  }, [windowWidth, windowHeight, hasScrolled]); // Recalcule l'animation quand la largeur de la fenêtre change */
+
+  // Références pour le logo et le texte
+  const logoRef = useRef(null);
+  const textRef = useRef(null);
+
+  // State pour gérer le premier scroll
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (hasScrolled) return; // Si déjà scrolé une fois, on ne fait rien
+      setHasScrolled(true); // Marque que le premier scroll a eu lieu
+
+      const logo = logoRef.current;
+      const text = textRef.current;
+
+      // Animation du logo
+      logo.classList.add('animate-logo');
+
+      // Animation du texte
+      if (text) {
+        text.classList.add('animate-text');
+      }
+
+      // Animation du logo qui tourne en continu après le premier scroll
+      const rotationInterval = setInterval(() => {
+        if (logo) {
+          logo.style.transform = `rotate(${parseInt(logo.style.transform.replace('rotate(', '').replace('deg)', ''), 10) + 1}deg)`;
+        }
+      }, 10);
+
+      // Nettoyer l'intervalle lorsque la page défile plus loin
+      return () => {
+        clearInterval(rotationInterval);
+      };
+    };
+
+    window.addEventListener('scroll', handleScroll, { once: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [hasScrolled]);
 
   return (
     <main>
