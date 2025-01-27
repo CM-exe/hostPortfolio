@@ -3,6 +3,7 @@ import { Hero } from "./_components/Hero";
 import { Status } from "./_components/Status";
 import { Spacer } from "./_components/Spacer";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
+import { Footer } from "./_components/Footer";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
     </div>
       <Spacer/>
       <Status />
+      <Footer />
     </main>
   );
 }

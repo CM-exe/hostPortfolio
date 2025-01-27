@@ -56,9 +56,9 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[300vh] py-20 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
-      <Header />
+      <ContentHeroParallax />
       <motion.div
         style={{
           rotateX,
@@ -100,16 +100,19 @@ export const HeroParallax = ({
   );
 };
 
-export const Header = () => {
+export const ContentHeroParallax = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        The Ultimate <br /> development studio
+    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0 z-30">
+      <h1 className="text-2xl md:text-7xl font-bold">
+        Multiple helpful websites <br/> for creating my portfolio
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
+      <p className="max-w-2xl text-base md:text-xl mt-8">
+        I am building a portfolio website using Next.js, React, and Tailwind CSS.
+        It will showcase multiple helpful websites that I have created.
+        Each website will be represented by a product card, displaying the title, thumbnail, and a link to the website.
+        The product cards will be arranged in three rows, with different animations applied to each row as the user scrolls.
+        The animations include translation, rotation, opacity, and perspective effects.
+        The content of the hero section, including the title and description, will be displayed above the product cards.
       </p>
     </div>
   );

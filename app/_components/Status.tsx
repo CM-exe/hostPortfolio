@@ -3,6 +3,7 @@ import { Section } from "./Section"
 import { Code, GitCompareArrows } from "lucide-react";
 import { TransitionLink } from "./TransitionLink";
 import { cn } from "@/lib/utils";
+import { NextjsIcon } from "./icons/NextjsIcon";
 
 export const Laravel = (props: {size?: number}) => (
     <svg xmlns="http://www.w3.org/2000/svg" width={props.size} viewBox="0 0 24 24" {...props}>
@@ -29,6 +30,12 @@ const PROJECTS = [
         description: "Description of project 3",
         url: "https://example.com",
     },
+    {
+        icone: NextjsIcon.bind(null, {size: 24}),
+        title: "My portfolio in Nextjs, React, Tailwind CSS",
+        description: "Description of project portfolioNextjs",
+        url: "/projects/portfolioNextjs",
+    },
 ];
 
 type ProjectProps = {
@@ -40,7 +47,7 @@ type ProjectProps = {
 
 const Project = (props: ProjectProps) => {
     return (
-        <TransitionLink href={props.url} className={cn('p-2 inline-flex gap-4 items-center hover:bg-accent/10 rounded-sm')}>
+        <TransitionLink href={props.url} className={cn('p-2 inline-flex gap-4 items-center hover:bg-accent/30 rounded-sm')}>
             <span className="bg-accent p-4 rounded-sm">
                 <props.icone />
             </span>
@@ -58,10 +65,11 @@ export const Status = () => {
             <div className="flex-[3] h-full">
             <Card className="p-4">
                 <p className="pb-1">Project structure</p>
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 overflow-y-auto max-h-[50]">
                     <Project {...PROJECTS[0]} />
                     <Project {...PROJECTS[1]} />
                     <Project {...PROJECTS[2]} />
+                    <Project {...PROJECTS[3]} />
                 </div>
             </Card>
             </div>

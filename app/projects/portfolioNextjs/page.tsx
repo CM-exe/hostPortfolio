@@ -3,6 +3,7 @@ import { Header } from "../../_components/Header";
 import { Status } from "../../_components/Status";
 import { Spacer } from "../../_components/Spacer";
 import { HeroParallax } from "@/components/ui/hero-parallax";
+import { Footer } from "@/app/_components/Footer";
 
 
 export default function Home() {
@@ -108,8 +109,9 @@ export default function Home() {
       <Header />
       <Spacer size="xs" />
       <HeroParallax products={products} />
-      <Spacer/>
+      <Spacer size="xs"/>
       <Status />
+      <Footer />
     </main>
   );
 }

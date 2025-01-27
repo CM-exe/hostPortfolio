@@ -45,7 +45,7 @@ export const ContainerScroll = ({
           perspective: "1000px",
         }}
       >
-        <Header translate={translate} titleComponent={titleComponent} />
+        <TitleScroll translate={translate} titleComponent={titleComponent} />
         <Card rotate={rotate} translate={translate} scale={scale}>
           {children}
         </Card>
@@ -54,7 +54,7 @@ export const ContainerScroll = ({
   );
 };
 
-export const Header = ({ translate, titleComponent }: any) => {
+export const TitleScroll = ({ translate, titleComponent }: any) => {
   return (
     <motion.div
       style={{
