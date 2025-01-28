@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { TransitionLink } from "./TransitionLink";
 
 export const Footer = () => {
     return(
@@ -11,19 +11,19 @@ export const Footer = () => {
                 <nav>
                     <ul className="flex space-x-4">
                         <li>
-                            <Link href="/">
+                            <TransitionLink href="/">
                                 Home
-                            </Link>
+                            </TransitionLink>
                         </li>
                         <li>
-                            <Link href="/about">
+                            <TransitionLink href="/about">
                                 About
-                            </Link>
+                            </TransitionLink>
                         </li>
                         <li>
-                            <Link href="/contact">
+                            <TransitionLink href="/contact">
                                 Contact
-                            </Link>
+                            </TransitionLink>
                         </li>
                     </ul>
                 </nav>
