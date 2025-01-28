@@ -18,7 +18,8 @@ export default function Home() {
                 Accept: "application/json",
             },
             body: JSON.stringify({
-                apikey: "b4c064c2-d7c9-4837-87fa-a52fba4fd506" /* process.env.WEB3FORMS_ACCESS_KEY */,
+                access_key: "b4c064c2-d7c9-4837-87fa-a52fba4fd506" /* process.env.WEB3FORMS_ACCESS_KEY */,
+                subject: "New submission from portfolio",
                 name: e.target.name.value,
                 email: e.target.email.value,
                 message: e.target.message.value,
@@ -45,17 +46,17 @@ export default function Home() {
             <form onSubmit={handleSendEmail}>
                 <Card className="p-4 flex-1">
                 <label htmlFor="name" className="my-auto mr-5">Name</label>
-                <input type="text" name="name" placeholder="Your name" className="bg-background text-accent-foreground active:bg-background/20 active:text-accent-foreground" required />
+                <input type="text" name="name" placeholder="Your name" className="bg-background text-accent-foreground active:bg-background/20 active:text-accent-foreground focus:bg-background/20 focus:text-accent-foreground" required />
                 </Card>
                 <Spacer size="xs" />
                 <Card className="p-4 flex-1">
                 <label htmlFor="email" className="my-auto mr-5">Email</label>
-                <input type="email" name="email" placeholder="Your email" className="bg-background text-accent-foreground active:bg-background/20 active:text-accent-foreground" required />
+                <input type="email" name="email" placeholder="Your email" className="bg-background text-accent-foreground active:bg-background/20 active:text-accent-foreground focus:bg-background/20 focus:text-accent-foreground" required />
                 </Card>
                 <Spacer size="xs" />
                 <Card className="p-4 flex-1">
                 <label htmlFor="message" className="my-auto mr-5">Message</label>
-                <textarea name="message" placeholder="Your message" className="bg-background text-accent-foreground active:bg-background/20 active:text-accent-foreground" required />
+                <textarea name="message" placeholder="Your message" className="bg-background text-accent-foreground active:bg-background/20 active:text-accent-foreground focus:bg-background/20 focus:text-accent-foreground" required />
                 </Card>
                 <Spacer size="xs" />
                 <Button type="submit">Send</Button>
