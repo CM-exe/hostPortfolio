@@ -26,9 +26,9 @@ const PROJECTS = [
     },
     {
         icone: GitCompareArrows,
-        title: "Project 3",
-        description: "Description of project 3",
-        url: "https://example.com",
+        title: "Project SAÉ S3",
+        description: "Description of project SAÉ S3",
+        url: "/projects/saeS3",
     },
     {
         icone: NextjsIcon.bind(null, {size: 24}),
