@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const Footer = () => {
     return(
-        <footer className="bg-gradient-to-b from-accent to-accent-10 my-14 text-accent-foreground py-4">
+        <footer className="bg-gradient-to-b from-accent to-accent-10 my-14 text-accent-foreground py-4 px-40">
             <div className="container mx-auto flex justify-between items-center">
                 <div>
                     <h2 className="text-xl font-bold font-caption">Portfolio de Clément MOURGUE</h2>

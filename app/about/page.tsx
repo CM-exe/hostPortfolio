@@ -177,7 +177,7 @@ export default function Home() {
           translateZ="60"
           className="text-accent-foreground font-sans"
         >
-          Rugby player at the Rugby Clup Pays de Roquefort (RCPR)
+          Rugby player at the Rugby Club Pays de Roquefort (RCPR)
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
           <img
