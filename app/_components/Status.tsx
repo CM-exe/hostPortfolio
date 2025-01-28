@@ -74,7 +74,12 @@ export const Status = () => {
             </Card>
             </div>
             <div className="flex-[2] flex flex-col gap-2 h-full">
-            <Card className="p-4 flex-1">Something</Card>
+            <Card className="p-4 flex-1 hover:bg-accent/20">
+                <TransitionLink href="/projects">
+                    <h3 className="text-lg text-accent-foreground">Projects</h3>
+                    <p className="text-sm text-muted-foreground">List of all my projects</p>
+                </TransitionLink>
+            </Card>
             <Card className="p-4 flex-1">Contact me</Card>
             </div>
         </Section>
