@@ -4,6 +4,7 @@ import { usePathname, useRouter } from "next/navigation"
 import { animatePageOut } from "../utils/animations"
 import Link from "next/link"
 import { PropsWithChildren } from "react";
+import { cn } from "@/lib/utils";
 
 type PropsTransitionLink = {
     href: string;

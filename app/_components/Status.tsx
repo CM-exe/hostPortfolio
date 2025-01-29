@@ -80,7 +80,7 @@ export const Status = () => {
                     <p className="text-sm text-muted-foreground">List of all my projects</p>
                 </TransitionLink>
             </Card>
-            <Card className="p-4 flex-1">Contact me</Card>
+            <Card className="p-4 flex-1"><TransitionLink href="/contact">Contact me</TransitionLink></Card>
             </div>
         </Section>
     );

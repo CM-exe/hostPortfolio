@@ -3,7 +3,7 @@ import Link from "next/link";
 import { CodeseeIcon } from "./icons/CodeseeIcon";
 import { cn } from "@/lib/utils";
 import { GithubIcon } from "./icons/GithubIcon";
-import { House } from 'lucide-react';
+import { FolderKanban, House } from 'lucide-react';
 import { TransitionLink } from "./TransitionLink";
 
 export const Header = () => {
@@ -21,6 +21,11 @@ export const Header = () => {
                         href="/about" className={cn(buttonVariants({ variant: "outline" }), 'size-6 w-auto p-2 text-foreground')}>
                         <CodeseeIcon size={16} />
                         About
+                    </TransitionLink>
+                    <TransitionLink
+                        href="/projects" className={cn(buttonVariants({ variant: "outline" }), 'size-6 w-auto p-2 text-foreground')}>
+                        <FolderKanban size={16} />
+                        Projects
                     </TransitionLink>
                     <Link
                         href="https://github.com/CM-exe"

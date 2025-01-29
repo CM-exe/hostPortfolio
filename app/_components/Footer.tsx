@@ -49,6 +49,15 @@ export const Footer = () => {
                         <HoverBorderGradient
                         className="bg-background text-accent-foreground flex items-center"
                         >
+                            <TransitionLink href="/projects">
+                                Projects
+                            </TransitionLink>
+                        </HoverBorderGradient>
+                        </li>
+                        <li>
+                        <HoverBorderGradient
+                        className="bg-background text-accent-foreground flex items-center"
+                        >
                             <TransitionLink href="/contact">
                                 Contact
                             </TransitionLink>
