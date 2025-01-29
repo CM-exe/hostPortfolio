@@ -9,6 +9,14 @@ import { Timeline } from "@/components/ui/timeline";
 import { SparklingTitle } from "../_components/SparklingTitle";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import Head from 'next/head';
+import { HtmlIcon } from "../_components/icons/HtmlIcon";
+import { CssIcon } from "../_components/icons/CssIcon";
+import { DockerIcon } from "../_components/icons/DockerIcon";
+import { AngularIcon } from "../_components/icons/AngularIcon";
+import { AndroidIcon } from "../_components/icons/AndroidIcon";
+import { JavascriptIcon } from "../_components/icons/JavascriptIcon";
+import { CppIcon } from "../_components/icons/CppIcon";
+import { JavaIcon } from "../_components/icons/JavaIcon";
 
 export default function Home() {
   const dataBut3 = [
@@ -50,6 +58,105 @@ export default function Home() {
     },
   ];
 
+  const dataBut2 = [
+    {
+      title: "Html",
+      description:
+        (
+          <div className="flex-1">
+            <div className="m-auto w-fit">
+              <HtmlIcon size={100} />
+            </div>
+          </div>
+        ),
+      link: "https://developer.mozilla.org/fr/docs/Web/HTML",
+    },
+    {
+      title: "CSS",
+      description:
+      (
+        <div className="flex-1">
+          <div className="m-auto w-fit">
+            <CssIcon size={100} />
+          </div>
+        </div>
+      ),
+      link: "https://developer.mozilla.org/fr/docs/Web/CSS",
+    },
+    {
+      title: "Javascript",
+      description:
+      (
+        <div className="flex-1">
+          <div className="m-auto w-fit">
+            <JavascriptIcon size={100} />
+          </div>
+        </div>
+      ),
+      link: "https://developer.mozilla.org/fr/docs/Learn_web_development/Core/Scripting/What_is_JavaScript",
+    },
+    {
+      title: "Docker",
+      description:
+      (
+        <div className="flex-1">
+          <div className="m-auto w-fit">
+            <DockerIcon size={100} />
+          </div>
+        </div>
+      ),
+      link: "https://www.docker.com/",
+    },
+    {
+      title: "Angular",
+      description:
+      (
+        <div className="flex-1">
+          <div className="m-auto w-fit">
+            <AngularIcon size={100} />
+          </div>
+        </div>
+      ),
+      link: "https://angular.dev/",
+    },
+    {
+      title: "Android",
+      description:
+      (
+        <div className="flex-1">
+          <div className="m-auto w-fit">
+            <AndroidIcon size={100} />
+          </div>
+        </div>
+      ),
+      link: "https://www.android.com/",
+    },
+    {
+      title: "C++",
+      description:
+      (
+        <div className="flex-1">
+          <div className="m-auto w-fit">
+            <CppIcon size={100} />
+          </div>
+        </div>
+      ),
+      link: "https://www.w3schools.com/cpp/default.asp",
+    },
+    {
+      title: "Java",
+      description:
+      (
+        <div className="flex-1">
+          <div className="m-auto w-fit">
+            <JavaIcon size={100} />
+          </div>
+        </div>
+      ),
+      link: "https://www.java.com/",
+    },
+  ];
+
   const data = [
     {
       title: "2024-2025 (BUT3)",
@@ -74,7 +181,7 @@ export default function Home() {
             Lorem ipsum is for people who are too lazy to write copy. But we are
             not. Here are some more example of beautiful designs I built.
           </p>
-          <HoverEffect items={dataBut3} />
+          <HoverEffect items={dataBut2} />
         </div>
       ),
     },

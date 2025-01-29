@@ -6,16 +6,16 @@ export const AngularIcon = (props: ComponentPropsWithoutRef<"svg"> & {size?: num
         <title>Angular</title>
         <defs>
             <linearGradient x1="25.0714876%" y1="90.9292007%" x2="96.1321855%" y2="55.1837089%" id="linearGradient-1">
-                <stop stop-color="#E40035" offset="0%"></stop>
-                <stop stop-color="#F60A48" offset="24%"></stop>
-                <stop stop-color="#F20755" offset="35.2%"></stop>
-                <stop stop-color="#DC087D" offset="49.4%"></stop>
-                <stop stop-color="#9717E7" offset="74.5%"></stop>
-                <stop stop-color="#6C00F5" offset="100%"></stop>
+                <stop stopColor="#E40035" offset="0%"></stop>
+                <stop stopColor="#F60A48" offset="24%"></stop>
+                <stop stopColor="#F20755" offset="35.2%"></stop>
+                <stop stopColor="#DC087D" offset="49.4%"></stop>
+                <stop stopColor="#9717E7" offset="74.5%"></stop>
+                <stop stopColor="#6C00F5" offset="100%"></stop>
             </linearGradient>
             <linearGradient x1="21.8628652%" y1="12.0575311%" x2="68.3669921%" y2="68.2103006%" id="linearGradient-2">
-                <stop stop-color="#FF31D9" offset="0%"></stop>
-                <stop stop-color="#FF5BE1" stop-opacity="0" offset="100%"></stop>
+                <stop stopColor="#FF31D9" offset="0%"></stop>
+                <stop stopColor="#FF5BE1" stopOpacity="0" offset="100%"></stop>
             </linearGradient>
         </defs>
         <g>

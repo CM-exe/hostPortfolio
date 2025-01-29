@@ -24,7 +24,7 @@ export default function Home() {
         <p>Here is the list of all the projects I putted in my portfolio</p>
         <Spacer size="xs" />
         <div className="flex flex-col gap-20">
-          <div className="flex">
+          <div className="flex m-auto">
           <PinContainer
           title="/saeS3"
           href="/projects/saeS3"
@@ -64,7 +64,7 @@ export default function Home() {
             </div>
           </PinContainer>
           </div>
-          <div className="flex">
+          <div className="flex m-auto">
           <PinContainer
           title="/saeS5"
           href="/projects/saeS5"
