@@ -2,8 +2,8 @@ import { SparklesCore } from "@/components/ui/sparkles"
 
 export const SparklingTitle = () => {
     return (
-      <div className="h-[30rem] w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
-        <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
+      <div className="h-[20rem] mt-[5rem] w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
+        <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-accent-foreground relative z-20">
           About me
         </h1>
         <div className="w-[40rem] h-40 relative">
