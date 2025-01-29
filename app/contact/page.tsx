@@ -94,10 +94,6 @@ export default function Home() {
                 </form>
             </Section>
         </BackgroundLines>
-        
-        <Spacer size="xs"/>
-        <Status />
-        <Spacer size="xs" />
         <Footer />
     </main>
     );
