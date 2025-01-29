@@ -4,11 +4,13 @@ import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 
 /* import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollTrigger } from 'gsap/ScrollTrigger'; */
 import { Header } from "../../_components/Header";
 import { Section } from "../../_components/Section";
 import { Spacer } from "../../_components/Spacer";
-import { LaravelIcon } from "../../_components/icons/LaravelIcon"; */
+import { LaravelIcon } from "../../_components/icons/LaravelIcon";
+import { Spotlight } from "@/components/ui/spotlight";
+import { Code } from "@/app/_components/Hero";
 
 /* gsap.registerPlugin(ScrollTrigger); */
 
@@ -203,8 +205,30 @@ export default function Home() {
   ];
 
   return (
-    <div className="p-10">
+    <main>
+      <Header />
+      <Spacer size="xs" />
+      <Section>
+        <Spotlight
+          className="-top-40 left-0 md:left-60 md:-top-20"
+          fill="white"
+        />
+            <h2 className="font-caption text-4xl text-center">PROJET DE SAÉ S5</h2>
+            <h4 className="font-caption text-2xl mb-3">La <Code>SAÉ</Code> est une Situation d&apos;Apprentissage Évalué qui a lieu durant les études de BUT Informatique</h4>
+            <p>
+                Écrire du <Code><LaravelIcon size={16}></LaravelIcon>code</Code>
+            </p>
+            <div className="h-[200vh]"></div>
+      <Spacer size="xs" />
+      <div>
+        <h1>Bienvenue sur ma page</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+        </p>
+      </div>
       <StickyScroll content={content} />
-    </div>
+        </Section>
+      
+    </main>
   );
 }
