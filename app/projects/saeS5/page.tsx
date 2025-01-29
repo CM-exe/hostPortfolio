@@ -1,18 +1,20 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
+
+/* import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Header } from "../../_components/Header";
 import { Section } from "../../_components/Section";
 import { Spacer } from "../../_components/Spacer";
-import { LaravelIcon } from "../../_components/icons/LaravelIcon";
+import { LaravelIcon } from "../../_components/icons/LaravelIcon"; */
 
-gsap.registerPlugin(ScrollTrigger);
+/* gsap.registerPlugin(ScrollTrigger); */
 
 export default function Home() {
 
-  // Références pour le logo et le texte
+  /* // Références pour le logo et le texte
   const logoRef = useRef(null);
   const textRef = useRef(null);
 
@@ -113,12 +115,12 @@ export default function Home() {
       <Spacer size="xs" />
       <Section>
             <h2 className="font-caption text-4xl text-center">PROJET DE SAÉ S5</h2>
-            {/* <Logo size={200} />
+            <Logo size={200} />
             <h4 className="font-caption text-2xl mb-3">La <Code>SAÉ</Code> est une Situation d&apos;Apprentissage Évalué qui a lieu durant les études de BUT Informatique</h4>
             <p>
                 Écrire du <Code><LaravelIcon size={16}></LaravelIcon>code</Code>
             </p>
-            <div className="h-[200vh]"></div> */}
+            <div className="h-[200vh]"></div>
       <div
         ref={logoRef}
         className="fixed top-40 left-1/2 transform -translate-x-1/2 transition-all duration-300"
@@ -135,5 +137,74 @@ export default function Home() {
         </Section>
         <div className="h-[200vh]"></div>
     </main>
+  ); */
+
+  const content = [
+    {
+      title: "Collaborative Editing",
+      description:
+        "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      content: (
+        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+          Collaborative Editing
+          <img
+            src="https://blog.pwskills.com/wp-content/uploads/2024/02/C-Plus-Plus-Tutorial-01.jpg"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="linear board demo"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "Real time changes",
+      description:
+        "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      content: (
+        <div className="h-full w-full  flex items-center justify-center text-white">
+          <img
+            src="https://blog.pwskills.com/wp-content/uploads/2024/02/C-Plus-Plus-Tutorial-01.jpg"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="linear board demo"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "Version control",
+      description:
+        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      content: (
+        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+          Version control
+          <img
+            src="https://blog.pwskills.com/wp-content/uploads/2024/02/C-Plus-Plus-Tutorial-01.jpg"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="linear board demo"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "Running out of content",
+      description:
+        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      content: (
+        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+          Running out of content
+        </div>
+      ),
+    },
+  ];
+
+  return (
+    <div className="p-10">
+      <StickyScroll content={content} />
+    </div>
   );
 }
