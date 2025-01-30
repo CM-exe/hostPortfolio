@@ -23,6 +23,7 @@ export default function Home() {
             body: JSON.stringify({
                 access_key: "26c0c28d-4bab-4891-b8cc-58cef74421cd" /* "b4c064c2-d7c9-4837-87fa-a52fba4fd506" */ /* process.env.WEB3FORMS_ACCESS_KEY */,
                 subject: "[PORTFOLIO - CONTACT]" + " " + e.target.subject.value,
+                from_name: "Mon portfolio",
                 name: e.target.name.value + " " + e.target.firstName.value,
                 email: e.target.email.value,
                 message: e.target.message.value,

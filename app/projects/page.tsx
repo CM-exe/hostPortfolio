@@ -21,7 +21,7 @@ export default function Home() {
       <Spacer size="xs" />
       <Section>
         <h1 className="text-4xl font-bold font-caption text-center text-accent-foreground">All my projects</h1>
-        <p>Here is the list of all the projects I putted in my portfolio</p>
+        <p className="text-center">Here is the list of all the projects I putted in my portfolio</p>
         <Spacer size="xs" />
         <div className="flex flex-col gap-20">
           <div className="flex m-auto">

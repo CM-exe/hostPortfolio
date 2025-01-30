@@ -252,9 +252,11 @@ export default function Home() {
         </Head>
       <Header />
       <SparklingTitle />
+      <Spacer size="md" />
+      <h3 className="text-4xl font-bold font-caption text-center text-accent-foreground">My interests</h3>
       <div className="flex m-auto w-full">
         <div className="block m-auto">
-      <CardContainer className="m-auto">
+      <CardContainer className="m-auto" containerClassName="pb-20 pt-0">
       <CardBody className="bg-accent/50 relative group/card border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
@@ -282,8 +284,8 @@ export default function Home() {
     </CardContainer>
     </div>
     <div className="block m-auto">
-    <CardContainer className="m-auto">
-      <CardBody className="bg-accent/50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+    <CardContainer className="m-auto"  containerClassName="pb-20 pt-0">
+      <CardBody className="bg-accent/50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
           className="text-xl font-bold font-caption text-accent-foreground"
@@ -297,7 +299,7 @@ export default function Home() {
         >
           Coding, development and embedded systems
         </CardItem>
-        <EvervaultCard text="Coding" />
+        <EvervaultCard text="Coding" className="h-[80%]" />
       </CardBody>
     </CardContainer>
     </div>
