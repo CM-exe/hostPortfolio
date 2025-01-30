@@ -11,6 +11,8 @@ import { Spacer } from "../../_components/Spacer";
 import { LaravelIcon } from "../../_components/icons/LaravelIcon";
 import { Spotlight } from "@/components/ui/spotlight";
 import { Code } from "@/app/_components/Hero";
+import { WorldMap } from "@/components/ui/world-map";
+import { Footer } from "@/app/_components/Footer";
 
 /* gsap.registerPlugin(ScrollTrigger); */
 
@@ -199,6 +201,22 @@ export default function Home() {
       content: (
         <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
           Running out of content
+          <img
+            src="https://blog.pwskills.com/wp-content/uploads/2024/02/C-Plus-Plus-Tutorial-01.jpg"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="linear board demo"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "",
+      description:
+        "",
+      content: (
+        <div className="h-[700px] w-full">
         </div>
       ),
     },
@@ -213,22 +231,51 @@ export default function Home() {
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="white"
         />
-            <h2 className="font-caption text-4xl text-center">PROJET DE SAÉ S5</h2>
+            <h2 className="font-caption text-4xl font-bold mt-[20vh] text-center">PROJET DE SAÉ S5</h2>
             <h4 className="font-caption text-2xl mb-3">La <Code>SAÉ</Code> est une Situation d&apos;Apprentissage Évalué qui a lieu durant les études de BUT Informatique</h4>
             <p>
                 Écrire du <Code><LaravelIcon size={16}></LaravelIcon>code</Code>
             </p>
-            <div className="h-[200vh]"></div>
-      <Spacer size="xs" />
-      <div>
-        <h1>Bienvenue sur ma page</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-        </p>
-      </div>
-      
         </Section>
+      <Spacer />
       <StickyScroll content={content} />
+      <Spacer />
+      <WorldMap
+        dots={[
+          {
+            start: {
+              lat: 64.2008,
+              lng: -149.4937,
+            }, // Alaska (Fairbanks)
+            end: {
+              lat: 34.0522,
+              lng: -118.2437,
+            }, // Los Angeles
+          },
+          {
+            start: { lat: 64.2008, lng: -149.4937 }, // Alaska (Fairbanks)
+            end: { lat: -15.7975, lng: -47.8919 }, // Brazil (Brasília)
+          },
+          {
+            start: { lat: -15.7975, lng: -47.8919 }, // Brazil (Brasília)
+            end: { lat: 38.7223, lng: -9.1393 }, // Lisbon
+          },
+          {
+            start: { lat: 51.5074, lng: -0.1278 }, // London
+            end: { lat: 28.6139, lng: 77.209 }, // New Delhi
+          },
+          {
+            start: { lat: 28.6139, lng: 77.209 }, // New Delhi
+            end: { lat: 43.1332, lng: 131.9113 }, // Vladivostok
+          },
+          {
+            start: { lat: 28.6139, lng: 77.209 }, // New Delhi
+            end: { lat: -1.2921, lng: 36.8219 }, // Nairobi
+          },
+        ]}
+      />
+      <Spacer size="xs" />
+      <Footer />
     </main>
   );
 }
