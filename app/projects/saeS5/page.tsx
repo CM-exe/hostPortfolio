@@ -226,9 +226,9 @@ export default function Home() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
         </p>
       </div>
-      <StickyScroll content={content} />
-        </Section>
       
+        </Section>
+      <StickyScroll content={content} />
     </main>
   );
 }

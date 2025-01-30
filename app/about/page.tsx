@@ -253,7 +253,7 @@ export default function Home() {
       <Header />
       <SparklingTitle />
       <Spacer size="md" />
-      <h3 className="text-4xl font-bold font-caption text-center text-accent-foreground">My interests</h3>
+      <h3 className="text-4xl font-bold font-caption text-center text-accent-foreground mb-10">My interests</h3>
       <div className="flex m-auto w-full">
         <div className="block m-auto">
       <CardContainer className="m-auto" containerClassName="pb-20 pt-0">
