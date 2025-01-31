@@ -2,7 +2,7 @@ import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import { TransitionLink } from "./TransitionLink";
 import { Spacer } from "./Spacer";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
-import { House } from "lucide-react";
+import pp from "../../public/pp.jpg";
 
 export const Footer = () => {
     const me = [
@@ -11,7 +11,7 @@ export const Footer = () => {
           name: "Clément MOURGUE",
           designation: "Student at IUT de Bayonne et du Pays Basque",
           image:
-            "https://media.licdn.com/dms/image/v2/D4E03AQH1ArIG4OXIpA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1716294577534?e=2147483647&v=beta&t=fJgMDg3JRZtnfAA5YaNTPNcCSFHwhXILlGj3QpIvqok",
+            pp,
         }
       ];
     return(
@@ -29,7 +29,7 @@ export const Footer = () => {
                     <ul className="flex space-x-4">
                         <li>
                         <HoverBorderGradient
-                        className="bg-background text-accent-foreground flex items-center" /* hover:bg-accent */
+                        className="bg-accent text-accent-foreground flex items-center" /* hover:bg-accent */
                         >
                             <TransitionLink href="/">
                                 Home
@@ -38,7 +38,7 @@ export const Footer = () => {
                         </li>
                         <li>
                         <HoverBorderGradient
-                        className="bg-background text-accent-foreground flex items-center"
+                        className="bg-accent text-accent-foreground flex items-center"
                         >
                             <TransitionLink href="/about">
                                 About
@@ -47,7 +47,7 @@ export const Footer = () => {
                         </li>
                         <li>
                         <HoverBorderGradient
-                        className="bg-background text-accent-foreground flex items-center"
+                        className="bg-accent text-accent-foreground flex items-center"
                         >
                             <TransitionLink href="/projects">
                                 Projects
@@ -56,7 +56,7 @@ export const Footer = () => {
                         </li>
                         <li>
                         <HoverBorderGradient
-                        className="bg-background text-accent-foreground flex items-center"
+                        className="bg-accent text-accent-foreground flex items-center"
                         >
                             <TransitionLink href="/contact">
                                 Contact

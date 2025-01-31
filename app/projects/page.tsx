@@ -88,7 +88,6 @@ export default function Home() {
         </div>
       </Section>
       <Spacer/>
-      <Status />
       <Footer />
     </main>
   );

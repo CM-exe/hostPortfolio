@@ -7,6 +7,7 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
+import Image, { StaticImageData } from "next/image";
 
 export const AnimatedTooltip = ({
   items,
@@ -15,7 +16,7 @@ export const AnimatedTooltip = ({
     id: number;
     name: string;
     designation: string;
-    image: string;
+    image: StaticImageData;
   }[];
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -76,7 +77,7 @@ export const AnimatedTooltip = ({
               </motion.div>
             )}
           </AnimatePresence>
-          <img
+          <Image
             onMouseMove={handleMouseMove}
             height={100}
             width={100}

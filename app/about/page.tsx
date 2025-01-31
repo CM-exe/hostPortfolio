@@ -18,44 +18,38 @@ import { JavascriptIcon } from "../_components/icons/JavascriptIcon";
 import { CppIcon } from "../_components/icons/CppIcon";
 import { JavaIcon } from "../_components/icons/JavaIcon";
 import { BookImage, Map, MapPinned, PlaneTakeoff } from "lucide-react";
+import { useState } from "react";
+import { Beams, Lens, Rays } from "@/components/ui/lens";
+import { motion } from "motion/react";
+import { FocusCards } from "@/components/ui/focus-cards";
 
 export default function Home() {
+  const [hovering, setHovering] = useState(false);
+
   const dataBut3 = [
     {
-      title: "Stripe",
-      description:
-        "A technology company that builds economic infrastructure for the internet.",
-      link: "https://stripe.com",
+      title: "Forest Adventure",
+      src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      title: "Netflix",
-      description:
-        "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-      link: "https://netflix.com",
+      title: "Valley of life",
+      src: "https://images.unsplash.com/photo-1600271772470-bd22a42787b3?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      title: "Google",
-      description:
-        "A multinational technology company that specializes in Internet-related services and products.",
-      link: "https://google.com",
+      title: "Sala behta hi jayega",
+      src: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=3070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      title: "Meta",
-      description:
-        "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-      link: "https://meta.com",
+      title: "Camping is for pros",
+      src: "https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      title: "Amazon",
-      description:
-        "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-      link: "https://amazon.com",
+      title: "The road not taken",
+      src: "https://images.unsplash.com/photo-1507041957456-9c397ce39c97?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      title: "Microsoft",
-      description:
-        "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-      link: "https://microsoft.com",
+      title: "The First Rule",
+      src: "https://assets.aceternity.com/the-first-rule.png",
     },
   ];
 
@@ -166,7 +160,7 @@ export default function Home() {
           <p className="text-accent-foreground text-xs md:text-sm font-normal mb-8">
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
-            <HoverEffect items={dataBut3} />
+            <FocusCards cards={dataBut3} />
         </div>
       ),
     },
@@ -175,12 +169,10 @@ export default function Home() {
       content: (
         <div>
           <p className="text-accent-foreground text-xs md:text-sm font-normal mb-8">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+            I have learn a lot of things during my DUT in computer science at the IUT of Bayonne and the Basque Country.
           </p>
           <p className="text-accent-foreground text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
+            Notably, I have learned the following languages and technologies:
           </p>
           <HoverEffect items={dataBut2} />
         </div>
@@ -191,55 +183,30 @@ export default function Home() {
       content: (
         <div>
           <p className="text-accent-foreground text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+            I made my baccalauréat général with mention très bien in 2022 with specialities in mathematics, engineering sciences and computer science at the Lycée Victor Duruy in Mont-de-Marsan.
           </p>
-          <div className="mb-8">
-            <div className="flex gap-2 items-center text-accent-foreground text-xs md:text-sm">
-              ✅ Card grid component
-            </div>
-            <div className="flex gap-2 items-center text-accent-foreground text-xs md:text-sm">
-              ✅ Startup template Aceternity
-            </div>
-            <div className="flex gap-2 items-center text-accent-foreground text-xs md:text-sm">
-              ✅ Random file upload lol
-            </div>
-            <div className="flex gap-2 items-center text-accent-foreground text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
-            </div>
-            <div className="flex gap-2 items-center text-accent-foreground text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
+          <Lens hovering={hovering} setHovering={setHovering}>
             <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/2004_Baccalaur%C3%A9at_g%C3%A9n%C3%A9ral.pdf/page1-1200px-2004_Baccalaur%C3%A9at_g%C3%A9n%C3%A9ral.pdf.jpg"
+              alt="image"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="rounded-2xl"
             />
-            <img
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <img
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div>
+          </Lens>
+          <motion.div
+            animate={{
+              filter: hovering ? "blur(1px)" : "blur(0px)",
+            }}
+            className="py-4 relative z-10"
+          >
+            <h2 className="text-2xl text-left font-bold">
+              Baccalauréat général
+            </h2>
+            <p className="text-left  mt-4">
+              Baccalauréat général spécialités mathématiques, sciences de l'ingénieur et informatique<br/>section européenne Maths/anglais et option maths expertes avec mention très bien.
+            </p>
+          </motion.div>
         </div>
       ),
     },

@@ -13,6 +13,7 @@ import { Spotlight } from "@/components/ui/spotlight";
 import { Code } from "@/app/_components/Hero";
 import { WorldMap } from "@/components/ui/world-map";
 import { Footer } from "@/app/_components/Footer";
+import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 
 /* gsap.registerPlugin(ScrollTrigger); */
 
@@ -209,6 +210,16 @@ export default function Home() {
         </div>
       ),
     },
+    {
+      title: "",
+      description:
+        "",
+      content: (
+        <div className="h-full w-full flex items-center justify-center">
+          
+        </div>
+      ),
+    },
   ];
 
   const offset = -10;
@@ -289,6 +300,13 @@ export default function Home() {
       <WorldMap
         dots={dotsMap}
       />
+      <Spacer />
+      <Section>
+      <DirectionAwareHover imageUrl={"https://www.flightgift.com/media/wp/FG/2024/02/tromso-1024x768.jpeg"}>
+        <p className="font-bold text-xl">Tromso, Norway</p>
+        <p className="font-normal text-sm">lat: 69.6516345, lng: 18.9558585</p>
+      </DirectionAwareHover>
+      </Section>
       <Spacer size="xs" />
       <Footer />
     </main>
