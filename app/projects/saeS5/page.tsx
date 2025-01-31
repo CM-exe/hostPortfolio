@@ -166,7 +166,7 @@ export default function Home() {
       description:
         "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
       content: (
-        <div className="h-full w-full  flex items-center justify-center text-white">
+        <div className="h-full w-full  flex items-center justify-center">
           <img
             src="https://blog.pwskills.com/wp-content/uploads/2024/02/C-Plus-Plus-Tutorial-01.jpg"
             width={300}
@@ -182,8 +182,7 @@ export default function Home() {
       description:
         "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
       content: (
-        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-          Version control
+        <div className="h-full w-full flex items-center justify-center">
           <img
             src="https://blog.pwskills.com/wp-content/uploads/2024/02/C-Plus-Plus-Tutorial-01.jpg"
             width={300}
@@ -199,8 +198,7 @@ export default function Home() {
       description:
         "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
       content: (
-        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-          Running out of content
+        <div className="h-full w-full flex items-center justify-center">
           <img
             src="https://blog.pwskills.com/wp-content/uploads/2024/02/C-Plus-Plus-Tutorial-01.jpg"
             width={300}
@@ -208,15 +206,6 @@ export default function Home() {
             className="h-full w-full object-cover"
             alt="linear board demo"
           />
-        </div>
-      ),
-    },
-    {
-      title: "",
-      description:
-        "",
-      content: (
-        <div className="h-[700px] w-full">
         </div>
       ),
     },
@@ -244,33 +233,55 @@ export default function Home() {
         dots={[
           {
             start: {
-              lat: 64.2008,
-              lng: -149.4937,
-            }, // Alaska (Fairbanks)
+              lat: 43.4813927,
+              lng: -1.5149935,
+            }, // Anglet
             end: {
-              lat: 34.0522,
-              lng: -118.2437,
-            }, // Los Angeles
+              lat: 45.5031824,
+              lng: -73.5698065,
+            }, // Montréal
           },
           {
-            start: { lat: 64.2008, lng: -149.4937 }, // Alaska (Fairbanks)
-            end: { lat: -15.7975, lng: -47.8919 }, // Brazil (Brasília)
+            start: {
+              lat: 43.4813927,
+              lng: -1.5149935,
+            }, // Anglet
+            end: { lat: 69.6516345, lng: 18.9558585 }, // Tromso
           },
           {
-            start: { lat: -15.7975, lng: -47.8919 }, // Brazil (Brasília)
-            end: { lat: 38.7223, lng: -9.1393 }, // Lisbon
+            start: {
+              lat: 43.4813927,
+              lng: -1.5149935,
+            }, // Anglet
+            end: { lat: 53.2744122, lng: -9.0490601 }, // Galway
           },
           {
-            start: { lat: 51.5074, lng: -0.1278 }, // London
-            end: { lat: 28.6139, lng: 77.209 }, // New Delhi
+            start: {
+              lat: 43.4813927,
+              lng: -1.5149935,
+            }, // Anglet
+            end: { lat: 33.7735976, lng: 10.8861888 }, // Djerba
           },
           {
-            start: { lat: 28.6139, lng: 77.209 }, // New Delhi
-            end: { lat: 43.1332, lng: 131.9113 }, // Vladivostok
+            start: {
+              lat: 43.4813927,
+              lng: -1.5149935,
+            }, // Anglet
+            end: { lat: 34.0346534, lng: -5.0161926 }, // Fes
           },
           {
-            start: { lat: 28.6139, lng: 77.209 }, // New Delhi
-            end: { lat: -1.2921, lng: 36.8219 }, // Nairobi
+            start: {
+              lat: 43.4813927,
+              lng: -1.5149935,
+            }, // Anglet
+            end: { lat: 39.613432, lng: 2.8829185 }, // Majorque
+          },
+          {
+            start: {
+              lat: 43.4813927,
+              lng: -1.5149935,
+            }, // Anglet
+            end: { lat: 39.9492572, lng: 4.0499642 }, // Minorque
           },
         ]}
       />
