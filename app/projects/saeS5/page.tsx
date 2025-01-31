@@ -211,13 +211,70 @@ export default function Home() {
     },
   ];
 
+  const offset = -10;
+
+  const dotsMap = [
+    {
+      start: {
+        lat: offset +  43.4813927,
+        lng: -1.5149935,
+      }, // Anglet
+      end: {
+        lat: offset + 45.5031824,
+        lng: -73.5698065,
+      }, // Montréal
+    },
+    {
+      start: {
+        lat: offset +  43.4813927,
+        lng: -1.5149935,
+      }, // Anglet
+      end: { lat: 69.6516345 - offset, lng: 18.9558585 }, // Tromso
+    },
+    {
+      start: {
+        lat: offset +  43.4813927,
+        lng: -1.5149935,
+      }, // Anglet
+      end: { lat: offset +3 +  53.2744122, lng: -9.0490601 }, // Galway
+    },
+    {
+      start: {
+        lat: offset +  43.4813927,
+        lng: -1.5149935,
+      }, // Anglet
+      end: { lat: offset -2 +  33.7735976, lng: 10.8861888 }, // Djerba
+    },
+    {
+      start: {
+        lat: offset +  43.4813927,
+        lng: -1.5149935,
+      }, // Anglet
+      end: { lat: offset*1.5 +  34.0346534, lng: -5.0161926 }, // Fes
+    },
+    {
+      start: {
+        lat: offset +  43.4813927,
+        lng: -1.5149935,
+      }, // Anglet
+      end: { lat: offset*1.4 +  39.613432, lng: 2.8829185 }, // Majorque
+    },
+    {
+      start: {
+        lat: offset +  43.4813927,
+        lng: -1.5149935,
+      }, // Anglet
+      end: { lat: offset*1.4 +  39.9492572, lng: 4.0499642 }, // Minorque
+    },
+  ];
+
   return (
     <main>
       <Header />
       <Spacer size="xs" />
       <Section>
         <Spotlight
-          className="-top-40 left-0 md:left-60 md:-top-20"
+          className="-top-[20vh] left-1/4"
           fill="white"
         />
             <h2 className="font-caption text-4xl font-bold mt-[20vh] text-center">PROJET DE SAÉ S5</h2>
@@ -230,60 +287,7 @@ export default function Home() {
       <StickyScroll content={content} />
       <Spacer />
       <WorldMap
-        dots={[
-          {
-            start: {
-              lat: 43.4813927,
-              lng: -1.5149935,
-            }, // Anglet
-            end: {
-              lat: 45.5031824,
-              lng: -73.5698065,
-            }, // Montréal
-          },
-          {
-            start: {
-              lat: 43.4813927,
-              lng: -1.5149935,
-            }, // Anglet
-            end: { lat: 69.6516345, lng: 18.9558585 }, // Tromso
-          },
-          {
-            start: {
-              lat: 43.4813927,
-              lng: -1.5149935,
-            }, // Anglet
-            end: { lat: 53.2744122, lng: -9.0490601 }, // Galway
-          },
-          {
-            start: {
-              lat: 43.4813927,
-              lng: -1.5149935,
-            }, // Anglet
-            end: { lat: 33.7735976, lng: 10.8861888 }, // Djerba
-          },
-          {
-            start: {
-              lat: 43.4813927,
-              lng: -1.5149935,
-            }, // Anglet
-            end: { lat: 34.0346534, lng: -5.0161926 }, // Fes
-          },
-          {
-            start: {
-              lat: 43.4813927,
-              lng: -1.5149935,
-            }, // Anglet
-            end: { lat: 39.613432, lng: 2.8829185 }, // Majorque
-          },
-          {
-            start: {
-              lat: 43.4813927,
-              lng: -1.5149935,
-            }, // Anglet
-            end: { lat: 39.9492572, lng: 4.0499642 }, // Minorque
-          },
-        ]}
+        dots={dotsMap}
       />
       <Spacer size="xs" />
       <Footer />

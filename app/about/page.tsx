@@ -17,6 +17,7 @@ import { AndroidIcon } from "../_components/icons/AndroidIcon";
 import { JavascriptIcon } from "../_components/icons/JavascriptIcon";
 import { CppIcon } from "../_components/icons/CppIcon";
 import { JavaIcon } from "../_components/icons/JavaIcon";
+import { BookImage, Map, MapPinned, PlaneTakeoff } from "lucide-react";
 
 export default function Home() {
   const dataBut3 = [
@@ -253,7 +254,8 @@ export default function Home() {
       <Header />
       <SparklingTitle />
       <Spacer size="md" />
-      <h3 className="text-4xl font-bold font-caption text-center text-accent-foreground mb-10">My interests</h3>
+      <h3 className="text-4xl font-bold font-caption text-center text-accent-foreground mb-2">My interests</h3>
+      <p className="text-center text-lg mb-10">Here are some of my interests and hobbies</p>
       <div className="flex m-auto w-full">
         <div className="block m-auto">
       <CardContainer className="m-auto" containerClassName="pb-20 pt-0">
@@ -285,7 +287,7 @@ export default function Home() {
     </div>
     <div className="block m-auto">
     <CardContainer className="m-auto"  containerClassName="pb-20 pt-0">
-      <CardBody className="bg-accent/50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+      <CardBody className="bg-accent/50 relative group/card border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
           className="text-xl font-bold font-caption text-accent-foreground"
@@ -300,6 +302,37 @@ export default function Home() {
           Coding, development and embedded systems
         </CardItem>
         <EvervaultCard text="Coding" className="h-[80%]" />
+      </CardBody>
+    </CardContainer>
+    </div>
+    <div className="block m-auto">
+    <CardContainer className="m-auto"  containerClassName="pb-20 pt-0">
+      <CardBody className="bg-accent/50 relative group/card border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+        <CardItem
+          translateZ="50"
+          className="text-xl font-bold font-caption text-accent-foreground"
+        >
+          Travelling
+        </CardItem>
+        <CardItem
+          as="p"
+          translateZ="60"
+          className="text-accent-foreground font-sans"
+        >
+          I like travelling and exploring multiples countries
+        </CardItem>
+        <CardItem>
+          <div className="flex flex-col gap-2 mt-4 h-[400%] w-[200%]">
+            <div className="flex m-auto">
+            <Map size={100} />
+            <PlaneTakeoff size={100} />
+            </div>
+            <div className="flex m-auto">
+            <MapPinned size={100} />
+            <BookImage size={100} />
+            </div>
+          </div>
+        </CardItem>
       </CardBody>
     </CardContainer>
     </div>
