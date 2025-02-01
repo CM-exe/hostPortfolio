@@ -42,7 +42,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             Timeline
         </h2>
         <p className="text-accent-foreground text-xl md:text-2xl font-bold font-caption max-w-sm">
-          Voici le déroulé de ma timeline
+          My experiences and skills learned during my studies
         </p>
       </div>
 

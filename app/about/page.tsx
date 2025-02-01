@@ -289,7 +289,7 @@ export default function Home() {
           I like travelling and exploring multiples countries
         </CardItem>
         <CardItem>
-          <div className="flex flex-col gap-2 mt-4 h-[400%] w-[200%]">
+          <div className="flex flex-col gap-2 my-8 h-[400%] w-[200%]">
             <div className="flex m-auto">
             <Map size={100} />
             <PlaneTakeoff size={100} />

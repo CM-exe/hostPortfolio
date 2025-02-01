@@ -29,7 +29,7 @@ export const Header = () => {
                     </TransitionLink>
                     <Link
                         href="https://github.com/CM-exe"
-                        className={cn(buttonVariants({ variant: "outline" }), "size-6 w-auto p-2")}>
+                        className={cn(buttonVariants({ variant: "outline" }), "size-6 w-auto p-2 cursor-alias")}>
                         <GithubIcon size={16} className="text-foreground" />
                         Github
                     </Link>

@@ -19,12 +19,6 @@ const PROJECTS = [
         url: "/projects/saeS5",
     },
     {
-        icone: Code,
-        title: "Project 2",
-        description: "Description of project 2",
-        url: "https://example.com",
-    },
-    {
         icone: GitCompareArrows,
         title: "Project SAÉ S3",
         description: "Description of project SAÉ S3",
@@ -69,7 +63,6 @@ export const Status = () => {
                     <Project {...PROJECTS[0]} />
                     <Project {...PROJECTS[1]} />
                     <Project {...PROJECTS[2]} />
-                    <Project {...PROJECTS[3]} />
                 </div>
             </Card>
             </div>

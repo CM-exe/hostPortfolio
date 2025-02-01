@@ -98,7 +98,7 @@ const SVG = ({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="absolute inset-0 w-full h-full"
+      className="absolute inset-0 w-full h-full -z-50"
     >
       {paths.map((path, idx) => (
         <motion.path
@@ -140,7 +140,6 @@ const SVG = ({
             repeatDelay: Math.floor(Math.random() * 10 + 2),
           }}
           key={`path-second-${idx}`}
-          
         />
       ))}
 
@@ -162,7 +161,6 @@ const SVG = ({
             repeatDelay: Math.floor(Math.random() * 10 + 2),
           }}
           key={`path-second-${idx}`}
-          
         />
       ))}
     </motion.svg>
