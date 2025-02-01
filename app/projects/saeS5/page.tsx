@@ -301,11 +301,35 @@ export default function Home() {
         dots={dotsMap}
       />
       <Spacer />
-      <Section>
+      <Section className="flex flex-col items-center gap-5 max-w-3xl">
+        <div className="flex gap-5">
       <DirectionAwareHover imageUrl={"https://www.flightgift.com/media/wp/FG/2024/02/tromso-1024x768.jpeg"}>
         <p className="font-bold text-xl">Tromso, Norway</p>
         <p className="font-normal text-sm">lat: 69.6516345, lng: 18.9558585</p>
       </DirectionAwareHover>
+      <DirectionAwareHover imageUrl={"https://www.ou-et-quand.net/partir/images/illustration/oualler/djerba-guellala_116.jpg"}>
+        <p className="font-bold text-xl">Djerba, Tunisia</p>
+        <p className="font-normal text-sm">lat: 33.7735976, lng: 10.8861888</p>
+      </DirectionAwareHover>
+      </div>
+      <div className="flex gap-5">
+      <DirectionAwareHover imageUrl={"https://uniqueirishhomes.ie/wp-content/uploads/2023/05/How-to-Spend-72-Hours-in-County-Galway.jpg"}>
+        <p className="font-bold text-xl">Galway, Ireland</p>
+        <p className="font-normal text-sm">lat: 53.2744122, lng: -9.0490601</p>
+      </DirectionAwareHover>
+      <DirectionAwareHover imageUrl={"https://cdn.generationvoyage.fr/2021/07/Cala-Llombards.jpg"}>
+        <p className="font-bold text-xl">Majorque, Islas Baleares, Spain</p>
+        <p className="font-normal text-sm">lat: 39.613432, lng: 2.8829185</p>
+      </DirectionAwareHover></div><div className="flex gap-5">
+      <DirectionAwareHover imageUrl={"https://res.cloudinary.com/lastminute-contenthub/s--k8fVR0SJ--/c_limit,h_999999,w_1920/f_auto/q_auto:eco/v1/DAM/Photos/Destinations/Europe/Spain/Menorca/shutterstock_566785840"}>
+        <p className="font-bold text-xl">Menorca, Islas Baleares, Spain</p>
+        <p className="font-normal text-sm">lat: 69.6516345, lng: 18.9558585</p>
+      </DirectionAwareHover>
+      <DirectionAwareHover imageUrl={"https://riad-layalina-fes.com/wp-content/uploads/vue-mosquee-quaraouiyine-650x500.jpg"}>
+        <p className="font-bold text-xl">Fes, Marocco</p>
+        <p className="font-normal text-sm">lat: 34.0346534, lng: -5.0161926</p>
+      </DirectionAwareHover>
+      </div>
       </Section>
       <Spacer size="xs" />
       <Footer />
