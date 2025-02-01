@@ -28,16 +28,16 @@ export default function Home() {
 
   const dataBut3 = [
     {
-      title: "Forest Adventure",
-      src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Kubernetes",
+      src: "https://sue.eu/wp-content/uploads/sites/6/2022/09/6.png",
     },
     {
-      title: "Valley of life",
-      src: "https://images.unsplash.com/photo-1600271772470-bd22a42787b3?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Jenkins",
+      src: "https://img-0.journaldunet.com/Z1UbLv8x9HzkskXOTJ8AxTsQmxI=/1500x/smart/4c631fb74d004887af2883e4c53271c3/ccmcms-jdn/19530600.jpg",
     },
     {
-      title: "Sala behta hi jayega",
-      src: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=3070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Three js",
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhUyPLMCrdBvL7byu5KkMnOssbQigrkiRxZw&s",
     },
     {
       title: "Camping is for pros",
@@ -223,7 +223,7 @@ export default function Home() {
       <Spacer size="md" />
       <h3 className="text-4xl font-bold font-caption text-center text-accent-foreground mb-2">My interests</h3>
       <p className="text-center text-lg mb-10">Here are some of my interests and hobbies</p>
-      <div className="flex m-auto w-full">
+      <div className="flex m-auto w-screen">
         <div className="block m-auto">
       <CardContainer className="m-auto" containerClassName="pb-20 pt-0">
       <CardBody className="bg-accent/50 relative group/card border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
