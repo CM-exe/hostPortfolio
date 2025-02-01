@@ -204,7 +204,7 @@ export default function Home() {
               Baccalauréat général
             </h2>
             <p className="text-left  mt-4">
-              Baccalauréat général spécialités mathématiques, sciences de l'ingénieur et informatique<br/>section européenne Maths/anglais et option maths expertes avec mention très bien.
+              Baccalauréat général spécialités mathématiques, sciences de l&apos;ingénieur et informatique<br/>section européenne Maths/anglais et option maths expertes avec mention très bien.
             </p>
           </motion.div>
         </div>
