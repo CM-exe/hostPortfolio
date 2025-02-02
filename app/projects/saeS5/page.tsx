@@ -320,7 +320,9 @@ export default function Home() {
       <DirectionAwareHover imageUrl={"https://cdn.generationvoyage.fr/2021/07/Cala-Llombards.jpg"}>
         <p className="font-bold text-xl">Majorque, Islas Baleares, Spain</p>
         <p className="font-normal text-sm">lat: 39.613432, lng: 2.8829185</p>
-      </DirectionAwareHover></div><div className="flex gap-5">
+      </DirectionAwareHover>
+      </div>
+      <div className="flex gap-5">
       <DirectionAwareHover imageUrl={"https://res.cloudinary.com/lastminute-contenthub/s--k8fVR0SJ--/c_limit,h_999999,w_1920/f_auto/q_auto:eco/v1/DAM/Photos/Destinations/Europe/Spain/Menorca/shutterstock_566785840"}>
         <p className="font-bold text-xl">Menorca, Islas Baleares, Spain</p>
         <p className="font-normal text-sm">lat: 69.6516345, lng: 18.9558585</p>
@@ -328,6 +330,12 @@ export default function Home() {
       <DirectionAwareHover imageUrl={"https://riad-layalina-fes.com/wp-content/uploads/vue-mosquee-quaraouiyine-650x500.jpg"}>
         <p className="font-bold text-xl">Fes, Marocco</p>
         <p className="font-normal text-sm">lat: 34.0346534, lng: -5.0161926</p>
+      </DirectionAwareHover>
+      </div>
+      <div className="flex gap-5">
+      <DirectionAwareHover imageUrl={"https://www.francaisaletranger.fr/wp-content/uploads/2022/11/Montreal.jpg"}>
+        <p className="font-bold text-xl">Montréal, Canada</p>
+        <p className="font-normal text-sm">lat: 45.5031824, lng: -73.5698065</p>
       </DirectionAwareHover>
       </div>
       </Section>
