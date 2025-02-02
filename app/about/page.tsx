@@ -223,7 +223,7 @@ export default function Home() {
       <Spacer size="md" />
       <h3 className="text-4xl font-bold font-caption text-center text-accent-foreground mb-2">My interests</h3>
       <p className="text-center text-lg mb-10">Here are some of my interests and hobbies</p>
-      <div className="flex m-auto w-screen">
+      <div className="flex m-auto max-w-screen">
         <div className="block m-auto">
       <CardContainer className="m-auto" containerClassName="pb-20 pt-0">
       <CardBody className="bg-accent/50 relative group/card border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
