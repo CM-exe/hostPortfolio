@@ -6,6 +6,7 @@ import { Metadata } from 'next';
 import { Footer } from "../../_components/Footer";
 import { WavyBackground } from "@/components/ui/wavy-background";
 import { Meteors } from "@/components/ui/meteors";
+import { Section } from "@/app/_components/Section";
  
 export const metadata: Metadata = {
   title: 'Clément MOURGUE - Porftolio - Projects',
@@ -24,6 +25,13 @@ export default function Home() {
           <h1 className="text-4xl font-bold font-caption text-center text-accent-foreground">Project SAÉ S3</h1>
           <Meteors number={20} />
       </div>
+      <Spacer/>
+      <Section>
+        <h1 className="text-2xl font-bold font-caption text-center text-accent-foreground">Introduction</h1>
+        <p className="text-lg text-accent-foreground">
+          SAÉ S3 is a project of a web application that allows the management of the student's academic path. It is a project that I carried out during my third year of study at the University of Technology of Troyes. This project was carried out in a team of 5 students. The project was carried out in 3 months.
+        </p>
+      </Section>
       <Spacer/>
       <Status />
       <Footer />
