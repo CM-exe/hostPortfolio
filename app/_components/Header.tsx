@@ -4,9 +4,9 @@ import Link from "next/link";
 import { CodeseeIcon } from "./icons/CodeseeIcon";
 import { cn } from "@/lib/utils";
 import { GithubIcon } from "./icons/GithubIcon";
-import { FolderKanban, House } from 'lucide-react';
+import { FolderKanban, House, MailPlus } from 'lucide-react';
 import { TransitionLink } from "./TransitionLink";
-import { IconBrandGithub, IconBrandX, IconExchange, IconEye, IconHome, IconNewSection } from "@tabler/icons-react";
+import { IconBrandGithub, IconEye, IconHome } from "@tabler/icons-react";
 import { FloatingDockMobile } from "@/components/ui/floating-dock";
 
 export const Header = () => {
@@ -52,6 +52,13 @@ export const Header = () => {
           ),
           href: "https://github.com/CM-exe",
         },
+        {
+          title: "Contact",
+          icon: (
+            <MailPlus className="h-full w-full text-accent-foreground" />
+          ),
+          href: "/contact",
+        },
       ];
 
     return(
@@ -81,6 +88,10 @@ export const Header = () => {
                         <GithubIcon size={16} className="text-foreground" />
                         Github
                     </Link>
+                    <TransitionLink
+                        href="/contact" className={cn(buttonVariants({ variant: "outline" }), 'size-6 w-auto p-2 text-foreground')}>
+                        <MailPlus size={16} />
+                    </TransitionLink>
                 </ul>
             </section>
         </header>

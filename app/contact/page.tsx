@@ -55,9 +55,9 @@ export default function Home() {
             <h2 className="bg-clip-text text-accent-foreground text-center md:text-4xl lg:text-7xl font-sans pt-2 pb-1 md:pt-5 md:pb-3 relative z-20 font-bold tracking-tight">
                 Form for contacting me
             </h2>
-            <p className="max-w-2xl mx-auto text-sm md:text-lg text-center">
+            <p className="max-w-2xl mx-auto text-sm md:text-lg text-center -z-[60]">
                 If you have any questions or if you want to contact me, you can fill out this form.<br/>
-                Have a happy day!                
+                Have a happy day!
             </p>
             <Spacer />
             <Section className="z-20 mt-0">
