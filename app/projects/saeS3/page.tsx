@@ -29,7 +29,7 @@ export default function Home() {
       <Section>
         <h1 className="text-2xl font-bold font-caption text-center text-accent-foreground">Introduction</h1>
         <p className="text-lg text-accent-foreground">
-          SAÉ S3 is a project of a web application that allows the management of the student's academic path. It is a project that I carried out during my third year of study at the University of Technology of Troyes. This project was carried out in a team of 5 students. The project was carried out in 3 months.
+          SAÉ S3 is a project of a web application that allows the management of the student&apos;s academic path. It is a project that I carried out during my third year of study at the University of Technology of Troyes. This project was carried out in a team of 5 students. The project was carried out in 3 months.
         </p>
       </Section>
       <Spacer/>
