@@ -84,7 +84,7 @@ export default function Home() {
       </ContainerScroll>
     </div>
       <h3 className="text-5xl font-bold text-accent-foreground text-center mb-10">Discover what you can get here !</h3>
-      <BentoGrid className="max-w-4xl mx-auto">
+      <BentoGrid className="md:max-w-4xl md:mx-auto mx-10">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}

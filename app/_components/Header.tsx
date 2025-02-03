@@ -1,3 +1,4 @@
+"use client";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import { CodeseeIcon } from "./icons/CodeseeIcon";
@@ -5,10 +6,57 @@ import { cn } from "@/lib/utils";
 import { GithubIcon } from "./icons/GithubIcon";
 import { FolderKanban, House } from 'lucide-react';
 import { TransitionLink } from "./TransitionLink";
+import { IconBrandGithub, IconBrandX, IconExchange, IconEye, IconHome, IconNewSection } from "@tabler/icons-react";
+import { FloatingDockMobile } from "@/components/ui/floating-dock";
 
 export const Header = () => {
+    const links = [
+        {
+          title: "Home",
+          icon: (
+            <IconHome className="h-full w-full text-accent-foreground" />
+          ),
+          href: "/",
+        },
+     
+        {
+          title: "About",
+          icon: (
+            <IconEye className="h-full w-full text-accent-foreground" />
+          ),
+          href: "/about",
+        },
+        {
+          title: "Projects",
+          icon: (
+            <FolderKanban className="h-full w-full text-accent-foreground" />
+          ),
+          href: "/projects",
+        },
+        /* {
+          title: "Aceternity UI",
+          icon: (
+            <img
+              src="https://assets.aceternity.com/logo-dark.png"
+              width={20}
+              height={20}
+              alt="Aceternity Logo"
+            />
+          ),
+          href: "#",
+        }, */
+        {
+          title: "GitHub",
+          icon: (
+            <IconBrandGithub className="h-full w-full text-accent-foreground" />
+          ),
+          href: "https://github.com/CM-exe",
+        },
+      ];
+
     return(
-    <header className="sticky top-0 md:py-4 py-2 w-full z-40">
+        <>
+        <header className="sticky top-0 md:py-4 py-2 w-full z-40 invisible md:visible">
             <section className="inline-flex items-baseline w-full px-5 md:px-40 m-auto">
                 <h1 className="text-lg font-bold font-caption text-primary ml-0 mr-auto">Clémo.com</h1>
                 <ul className="flex items-center gap-2 mr-0 ml-auto">
@@ -36,5 +84,11 @@ export const Header = () => {
                 </ul>
             </section>
         </header>
+        <div className="md:invisible w-screen flex items-center fixed z-40 bottom-0 mb-5">
+        <FloatingDockMobile
+        items={links}
+        className="mx-auto"
+        /></div>
+      </>
     );
 };
