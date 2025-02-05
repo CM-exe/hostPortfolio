@@ -341,6 +341,7 @@ export default function Home() {
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 bg-gradient-to-br from-accent to-muted">
           <h2 className="text-xl md:text-4xl font-bold text-accent-foreground">Travelling</h2>
         <WorldMap
+        backgroundColor="bg-accent"
         dots={dotsMap}
       />
         </div>
