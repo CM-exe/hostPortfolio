@@ -8,6 +8,7 @@ type Tab = {
   title: string;
   value: string;
   content?: string | React.ReactNode | any;
+  size?: number;
 };
 
 export const Tabs = ({
@@ -114,7 +115,11 @@ export const FadeInDiv = ({
           animate={{
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
-          className={cn("w-full h-full absolute top-0 left-0", className)}
+          className={cn(
+            "w-full absolute top-0 left-0",
+            tab.size ? `h-[${tab.size}rem]` : "h-full",
+            className
+          )}
         >
           {tab.content}
         </motion.div>
