@@ -22,6 +22,8 @@ import { useState } from "react";
 import { Beams, Lens, Rays } from "@/components/ui/lens";
 import { motion } from "motion/react";
 import { FocusCards } from "@/components/ui/focus-cards";
+import { Tabs } from "@/components/ui/tabs";
+import { WorldMap } from "@/components/ui/world-map";
 
 export default function Home() {
   const [hovering, setHovering] = useState(false);
@@ -212,6 +214,140 @@ export default function Home() {
     },
   ];
 
+  const offset = -10;
+
+  const dotsMap = [
+    {
+      start: {
+        lat: offset +  43.4813927,
+        lng: -1.5149935,
+      }, // Anglet
+      end: {
+        lat: offset + 45.5031824,
+        lng: -73.5698065,
+      }, // Montréal
+    },
+    {
+      start: {
+        lat: offset +  43.4813927,
+        lng: -1.5149935,
+      }, // Anglet
+      end: { lat: 69.6516345 - offset, lng: 18.9558585 }, // Tromso
+    },
+    {
+      start: {
+        lat: offset +  43.4813927,
+        lng: -1.5149935,
+      }, // Anglet
+      end: { lat: offset +3 +  53.2744122, lng: -9.0490601 }, // Galway
+    },
+    {
+      start: {
+        lat: offset +  43.4813927,
+        lng: -1.5149935,
+      }, // Anglet
+      end: { lat: offset -2 +  33.7735976, lng: 10.8861888 }, // Djerba
+    },
+    {
+      start: {
+        lat: offset +  43.4813927,
+        lng: -1.5149935,
+      }, // Anglet
+      end: { lat: offset*1.5 +  34.0346534, lng: -5.0161926 }, // Fes
+    },
+    {
+      start: {
+        lat: offset +  43.4813927,
+        lng: -1.5149935,
+      }, // Anglet
+      end: { lat: offset*1.4 +  39.613432, lng: 2.8829185 }, // Majorque
+    },
+    {
+      start: {
+        lat: offset +  43.4813927,
+        lng: -1.5149935,
+      }, // Anglet
+      end: { lat: offset*1.4 +  39.9492572, lng: 4.0499642 }, // Minorque
+    },
+  ];
+
+  const tabs = [
+    {
+      title: "Rugby",
+      value: "rugby",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 bg-gradient-to-br from-accent to-muted">
+          <h2 className="text-xl md:text-4xl font-bold text-accent-foreground">Rugby</h2>
+          <CardContainer className="m-auto" containerClassName="pb-20 pt-0">
+          <CardBody className="bg-accent/50 relative group/card border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+            <CardItem
+              translateZ="50"
+              className="text-xl font-bold font-caption text-accent-foreground"
+            >
+              Rugby player
+            </CardItem>
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-accent-foreground font-sans"
+            >
+              Rugby player at the Rugby Club Pays de Roquefort (RCPR)
+            </CardItem>
+            <CardItem translateZ="100" className="w-full mt-4">
+              <img
+                src="https://s3.static-clubeo.com/uploads/phcapr/Medias/rubon0[1]__o1lmih.gif" /* https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */
+                height="203"
+                width="256"
+                className="mx-auto object-cover rounded-xl group-hover/card:shadow-xl"
+                alt="thumbnail"
+              />
+            </CardItem>
+          </CardBody>
+        </CardContainer>
+        </div>
+      ),
+    },
+    {
+      title: "Coding",
+      value: "coding",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 bg-gradient-to-br from-accent to-muted">
+          <h2 className="text-xl md:text-4xl font-bold text-accent-foreground">Coding</h2>
+          <CardContainer className="m-auto"  containerClassName="pb-20 pt-0">
+          <CardBody className="bg-accent/50 relative group/card border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+            <CardItem
+              translateZ="50"
+              className="text-xl font-bold font-caption text-accent-foreground"
+            >
+              Coding
+            </CardItem>
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-accent-foreground font-sans"
+            >
+              Coding, development and embedded systems
+            </CardItem>
+            <EvervaultCard text="Coding" className="h-[80%]" />
+          </CardBody>
+        </CardContainer>
+        </div>
+      ),
+    },
+    {
+      title: "Travelling",
+      value: "travelling",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 bg-gradient-to-br from-accent to-muted">
+          <h2 className="text-xl md:text-4xl font-bold text-accent-foreground">Travelling</h2>
+        <WorldMap
+        dots={dotsMap}
+      />
+        </div>
+      ),
+    },
+  ];
+
   return (
     <main>
       <Head>
@@ -303,6 +439,10 @@ export default function Home() {
       </CardBody>
     </CardContainer>
     </div>
+    </div>
+    <div className="h-[50rem] relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-5 md:my-40">
+      <h3 className="text-4xl font-bold font-caption text-center text-accent-foreground mb-2">If you want more details about one of them<br/>Just click on a tab !</h3>
+      <Tabs tabs={tabs} />
     </div>
       <Spacer/>
       <div className="w-full">
