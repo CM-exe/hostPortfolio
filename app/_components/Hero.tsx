@@ -14,7 +14,7 @@ export const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) 
 
 export const Hero = () => {
     return (
-        <Section className="mt-[15vh]">
+        <Section className="mt-[0vh]">
             <h2 className="font-caption font-bold text-accent-foreground text-4xl">Clément MOURGUE</h2>
             {/* <LampContainer> */}
                 <motion.h4
