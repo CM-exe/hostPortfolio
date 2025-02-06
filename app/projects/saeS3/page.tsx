@@ -1,20 +1,19 @@
 import { Header } from "../../_components/Header";
-import { Hero } from "../../_components/Hero";
 import { Status } from "../../_components/Status";
 import { Spacer } from "../../_components/Spacer";
-import { Metadata } from 'next';
 import { Footer } from "../../_components/Footer";
-import { WavyBackground } from "@/components/ui/wavy-background";
 import { Meteors } from "@/components/ui/meteors";
 import { Section } from "@/app/_components/Section";
+import Head from "next/head";
  
-export const metadata: Metadata = {
-  title: 'Clément MOURGUE - Porftolio - Projects',
-};
 
 export default function Home() {
   return (
     <main>
+      <Head>
+        <title>Clément MOURGUE - Porftolio - Project SAE S3</title>
+        <meta name="description" content="The page of my project of SAE S3" />
+      </Head>
       <Header />
       {/* <WavyBackground colors={["#4380ed", "#0c3798", "#112c69","#030712"]} backgroundFill="hsl(224 71.4% 4.1%)"  blur={5} waveWidth={60} speed="fast" containerClassName="bg-background">
         <div className="container mx-auto pb-16">

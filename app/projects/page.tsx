@@ -9,6 +9,8 @@ import { PinContainer } from "@/components/ui/3d-pin";
 import { Code } from "../_components/Hero";
 import { LaravelIcon } from "../_components/icons/LaravelIcon";
 import { NextjsIcon } from "../_components/icons/NextjsIcon";
+import { ShootingStars } from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/stars-background";
 
 export default function Home() {
   return (
@@ -22,9 +24,11 @@ export default function Home() {
       <Section>
         <h1 className="text-4xl font-bold font-caption text-center text-accent-foreground">All my projects</h1>
         <p className="text-center">Here is the list of all the projects I putted in my portfolio</p>
+        <ShootingStars />
+        <StarsBackground />
         <Spacer size="xs" />
         <div className="flex flex-col gap-20">
-          <div className="flex m-auto">
+          <div className="flex flex-col gap-20 md:gap-0 md:flex-row m-auto">
           <PinContainer
           title="/saeS3"
           href="/projects/saeS3"
