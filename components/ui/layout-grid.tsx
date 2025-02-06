@@ -1,12 +1,12 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, JSX } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 type Card = {
   id: number;
-  content: Element | React.ReactNode | string;
+  content: JSX.Element | React.ReactNode | string;
   className: string;
   thumbnail: string;
 };
