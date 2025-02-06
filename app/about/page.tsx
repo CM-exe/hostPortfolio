@@ -280,7 +280,7 @@ export default function Home() {
           />
           <Spacer size="xs" />
           <p className="text-accent-foreground text-sm md:text-base font-normal">We play at the level of Regional 3 currently (2024/2025)<br/>
-          It's a club located at Roquefort (RCPR is for Rugby Club Pays de Roquefort)</p>
+          It&apos;s a club located at Roquefort (RCPR is for Rugby Club Pays de Roquefort)</p>
           <Image src={nouvelle_aquitaine}
           alt="Nouvelle-Aquitaine"
           className="mx-auto mt-2" />
