@@ -1,6 +1,7 @@
+"use client";
 import { Card } from "@/components/ui/card";
 import { Section } from "./Section"
-import { Code, GitCompareArrows } from "lucide-react";
+import { GitCompareArrows } from "lucide-react";
 import { TransitionLink } from "./TransitionLink";
 import { cn } from "@/lib/utils";
 import { NextjsIcon } from "./icons/NextjsIcon";
@@ -54,6 +55,14 @@ const Project = (props: ProjectProps) => {
 }; 
 
 export const Status = () => {
+    const downloadFile = () => {
+        const fileUrl = "/CV_MOURGUE.pdf";
+        const link = document.createElement("a");
+        link.href = fileUrl;
+        link.download = "CV_MOURGUE.pdf";
+        link.click();
+      };
+
     return (
         <Section className="flex max-md:flex-col gap-4 items-start">
             <div className="flex-[3] h-full">
@@ -74,6 +83,7 @@ export const Status = () => {
                 </TransitionLink>
             </Card>
             <Card className="p-4 flex-1 hover:bg-accent/20"><TransitionLink href="/contact">Contact me</TransitionLink></Card>
+            <Card className="p-4 flex-1 hover:bg-accent/20"><button onClick={downloadFile}>Download my CV</button></Card>
             </div>
         </Section>
     );
