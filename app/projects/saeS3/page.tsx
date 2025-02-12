@@ -6,10 +6,20 @@ import { Footer } from "../../_components/Footer";
 import { MeteorsFullWidth } from "@/components/ui/meteors";
 import { Section } from "@/app/_components/Section";
 import Head from "next/head";
-import { FoldableCardCustomisable } from "@/components/ui/foldable-card";
+import { motion, useInView } from "motion/react";
+import { useEffect, useRef } from "react";
  
 
 export default function Home() {
+  const ref = useRef(null);
+  const isInView = useInView(ref,
+    {margin: "-200px"}
+  );
+
+  useEffect(() => {
+    console.log(isInView);
+  }, [isInView]);
+
   return (
     <main>
       <Head>
@@ -34,8 +44,33 @@ export default function Home() {
         </p>
       </Section>
       <Spacer/>
-      <FoldableCardCustomisable title="Laravel projects are complete!" url="https://cubettech.com/_next/image/?url=https%3A%2F%2Fcubettech.com%2Fwp-content%2Fuploads%2F2022%2F09%2Fbuild-progressive-web-apps-using-laravel.png&w=3840&q=75" />
-      <Spacer/>
+      <Spacer size="xl"/>
+      <div ref={ref} className=" relative mx-auto w-96 grid h-32">
+        <h1 className="z-0 text-3xl m-auto text-accent-foreground">
+          This a onScroll show
+        </h1>
+      {/* <motion.div className="w-1/3 pb-16 bg-muted top-0 bottom-0 left-0 right-0 absolute z-10"
+      initial={{opacity: 1}}
+      whileInView={{opacity: 0}}
+      viewport={{margin: "-200px"}}
+      /> */}
+      <motion.div className="w-1/3 pb-16 bg-muted top-0 bottom-0 left-0 right-0 absolute z-10"
+      animate={{
+        y: isInView ? "-100%" : "0%",
+      }}
+      />
+      <motion.div className="w-1/3 pb-16 bg-muted top-0 bottom-0 left-1/3 right-0 absolute z-10"
+      animate={{
+        y: isInView ? "100%" : "0%",
+      }}
+      />
+      <motion.div className="w-1/3 pb-16 bg-muted top-0 bottom-0 left-2/3 right-0 absolute z-10"
+      animate={{
+        y: isInView ? "-100%" : "0%",
+      }}
+      />
+      </div>
+      <Spacer size="xl"/>
       <Status />
       <Footer />
     </main>
