@@ -1,3 +1,4 @@
+"use client";
 import { Header } from "../../_components/Header";
 import { Status } from "../../_components/Status";
 import { Spacer } from "../../_components/Spacer";
@@ -5,7 +6,7 @@ import { Footer } from "../../_components/Footer";
 import { MeteorsFullWidth } from "@/components/ui/meteors";
 import { Section } from "@/app/_components/Section";
 import Head from "next/head";
-import { FoldableCard } from "@/components/ui/foldable-card";
+import { FoldableCardCustomisable } from "@/components/ui/foldable-card";
  
 
 export default function Home() {
@@ -33,7 +34,7 @@ export default function Home() {
         </p>
       </Section>
       <Spacer/>
-      <FoldableCard />
+      <FoldableCardCustomisable title="Laravel projects are complete!" url="https://cubettech.com/_next/image/?url=https%3A%2F%2Fcubettech.com%2Fwp-content%2Fuploads%2F2022%2F09%2Fbuild-progressive-web-apps-using-laravel.png&w=3840&q=75" />
       <Spacer/>
       <Status />
       <Footer />
