@@ -68,7 +68,7 @@ export const Status = () => {
                 </div>
             </Card>
             </div>
-            <div className="flex-[2] flex flex-col gap-2 h-full">
+            <div className="flex-[2] flex flex-col max-md:mx-auto gap-2 h-full">
             <Card className="p-4 flex-1 hover:bg-accent/20">
                 <TransitionLink href="/projects">
                     <h3 className="text-lg text-accent-foreground">Projects</h3>
