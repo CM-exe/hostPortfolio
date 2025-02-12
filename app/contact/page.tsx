@@ -60,7 +60,7 @@ export default function Home() {
                 Have a happy day!
             </p>
             <Spacer />
-            <Section className="z-20 mt-0">
+            <Section className="z-20 mt-0 max-md:min-h-[90vh]">
                 <form onSubmit={handleSendEmail}>
                     <div className="flex gap-5">
                     <UserRound size={24} className="my-auto" />

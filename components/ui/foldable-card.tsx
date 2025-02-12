@@ -54,7 +54,7 @@ export const FoldableCard = () => {
                 y:0,
             }
         }}
-        className="flex w-full justify-center text-xl font-semibold md:text-4xl mt-4">
+        className="flex w-full justify-center text-lg font-semibold md:text-2xl mt-4">
             <p className="text-accent-foreground text-center rounded-xl bg-muted px-5 py-2">Lycée Victor Duruy of Mont-De-Marsan is an old high school!</p>
         </motion.div>
         </motion.div>

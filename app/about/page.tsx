@@ -30,6 +30,7 @@ import nouvelle_aquitaine from "../../public/nouvelle-aquitaine.png";
 import Image from "next/image";
 import { IconBallAmericanFootball, IconDeviceGamepad2 } from "@tabler/icons-react";
 import { GridItem } from "@/components/ui/glowing-effect";
+import { FoldableCard } from "@/components/ui/foldable-card";
 
 export default function Home() {
   const [hovering, setHovering] = useState(false);
@@ -181,6 +182,8 @@ export default function Home() {
           <p className="text-accent-foreground text-xs md:text-sm font-normal mb-4">
             I made my baccalauréat général with mention très bien in 2022 with specialities in mathematics, engineering sciences and computer science at the Lycée Victor Duruy in Mont-de-Marsan.
           </p>
+          <FoldableCard />
+          <Spacer size="xs" />
           <Lens hovering={hovering} setHovering={setHovering}>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/2004_Baccalaur%C3%A9at_g%C3%A9n%C3%A9ral.pdf/page1-1200px-2004_Baccalaur%C3%A9at_g%C3%A9n%C3%A9ral.pdf.jpg"
