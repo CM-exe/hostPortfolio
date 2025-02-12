@@ -471,7 +471,7 @@ export default function Home() {
         >
           I like travelling and exploring multiples countries
         </CardItem>
-        <CardItem>
+        <CardItem translateZ="100">
           <div className="flex flex-col gap-2 my-8 h-[400%] w-[200%]">
             <div className="flex m-auto">
             <Map size={100} />

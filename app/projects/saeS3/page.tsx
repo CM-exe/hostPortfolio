@@ -2,9 +2,10 @@ import { Header } from "../../_components/Header";
 import { Status } from "../../_components/Status";
 import { Spacer } from "../../_components/Spacer";
 import { Footer } from "../../_components/Footer";
-import { Meteors } from "@/components/ui/meteors";
+import { MeteorsFullWidth } from "@/components/ui/meteors";
 import { Section } from "@/app/_components/Section";
 import Head from "next/head";
+import { FoldableCard } from "@/components/ui/foldable-card";
  
 
 export default function Home() {
@@ -22,7 +23,7 @@ export default function Home() {
       </WavyBackground> */}
       <div className="container mx-auto pb-16">
           <h1 className="text-4xl font-bold font-caption text-center text-accent-foreground">Project SAÉ S3</h1>
-          <Meteors number={20} />
+            <MeteorsFullWidth number={50} />
       </div>
       <Spacer/>
       <Section>
@@ -31,6 +32,8 @@ export default function Home() {
           SAÉ S3 is a project of a web application that allows the management of the student&apos;s academic path. It is a project that I carried out during my third year of study at the University of Technology of Troyes. This project was carried out in a team of 5 students. The project was carried out in 3 months.
         </p>
       </Section>
+      <Spacer/>
+      <FoldableCard />
       <Spacer/>
       <Status />
       <Footer />
