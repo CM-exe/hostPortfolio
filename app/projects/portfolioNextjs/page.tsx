@@ -4,6 +4,9 @@ import { Status } from "../../_components/Status";
 import { Spacer } from "../../_components/Spacer";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 import { Footer } from "@/app/_components/Footer";
+import { useEffect, useRef } from "react";
+import { motion, useInView } from "motion/react";
+import { IconBrandNextjs, IconBrandReact, IconBrandTailwind } from "@tabler/icons-react";
 
 
 export default function Home() {
@@ -48,14 +51,96 @@ export default function Home() {
         },
       ];
 
+      const ref = useRef(null);
+      const isInView = useInView(ref,
+        {margin: "-100px"}
+      );
+    
+      useEffect(() => {
+        console.log(isInView);
+      }, [isInView]);
+    
+
   return (
     <main>
       <Header />
       <Spacer size="xs" />
       <HeroParallax products={products} />
-      <Spacer size="xs"/>
+      <Spacer size="xl" />
+      <div ref={ref} className="px-[15vw] mb-[10vh]">
+        <h1 className="text-4xl font-bold font-caption text-center text-accent-foreground mb-[15vh] ">Project Portfolio Next.js</h1>
+        <motion.div className="border-blue-500 h-0.5"
+        animate={{
+          width: isInView ? "100%" : "0%"
+        }} />
+      </div>
+      <TechnologiesUsed />
+      <Spacer size="xl"/>
       <Status />
       <Footer />
     </main>
+  );
+}
+
+const TechnologiesUsed = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref,
+    {margin: "-250px"}
+  );
+
+  useEffect(() => {
+    console.log(isInView);
+  }, [isInView]);
+
+  return (
+    <div ref={ref} className=" relative mx-auto w-96 grid h-32">
+      <motion.div className="w-1/3 bg-muted rounded-l-lg top-0 bottom-0 left-0 right-0 absolute z-10"
+      animate={{
+        y: isInView ? "-60%" : "0%",
+        borderRadius: isInView ? "var(--radius)" : "var(--radius) 0 0 var(--radius)",
+      }}
+      ><IconBrandNextjs size={100} className="m-auto mt-[10%]" /></motion.div>
+      <motion.div className="w-1/3 top-0 bottom-0 left-0 right-0 absolute z-0"
+      animate={{
+        y: isInView ? "60%" : "0%",
+        opacity: isInView ? 1 : 0,
+        marginRight: isInView ? "5px" : "0",
+      }}
+      >
+        <h1 className="z-0 font-semibold text-3xl m-auto text-accent-foreground text-center">Nextjs</h1>
+        <p className="z-0 text-muted-foreground text-center">The React Framework for Production</p>
+      </motion.div>
+      <motion.div className="w-1/3 bg-muted top-0 bottom-0 left-1/3 right-0 absolute z-10"
+      animate={{
+        y: isInView ? "60%" : "0%",
+        borderRadius: isInView ? "var(--radius)" : "0%",
+      }}
+      ><IconBrandReact size={100} className="m-auto mt-[10%]" /></motion.div>
+      <motion.div className="w-1/3 top-0 bottom-0 left-1/3 right-0 absolute z-0"
+      animate={{
+        y: isInView ? "-60%" : "0%",
+        opacity: isInView ? 1 : 0,
+      }}
+      >
+        <h1 className="z-0 font-semibold text-3xl m-auto text-accent-foreground text-center">React</h1>
+        <p className="z-0 text-muted-foreground text-center">A JavaScript library for building user interfaces</p>
+      </motion.div>
+      <motion.div className="w-1/3 bg-muted top-0 bottom-0 rounded-r-lg left-2/3 right-0 absolute z-10"
+      animate={{
+        y: isInView ? "-60%" : "0%",
+        borderRadius: isInView ? "var(--radius)" : "0 var(--radius) var(--radius) 0",
+      }}
+      ><IconBrandTailwind size={100} className="m-auto mt-[10%]" /></motion.div>
+      <motion.div className="w-1/3 top-0 bottom-0 left-2/3 right-0 absolute z-0"
+      animate={{
+        y: isInView ? "60%" : "0%",
+        opacity: isInView ? 1 : 0,
+        marginLeft: isInView ? "5px" : "0",
+      }}
+      >
+        <h1 className="z-0 font-semibold text-3xl m-auto text-accent-foreground text-center">Tailwind CSS</h1>
+        <p className="z-0 text-muted-foreground text-center">A utility-first CSS framework for rapid UI development</p>
+      </motion.div>
+      </div>
   );
 }
