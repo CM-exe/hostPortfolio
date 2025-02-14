@@ -5,7 +5,7 @@ import { Spacer } from "../../_components/Spacer";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 import { Footer } from "@/app/_components/Footer";
 import { useEffect, useRef } from "react";
-import { motion, useInView } from "motion/react";
+import { motion, useInView, useScroll, useSpring } from "motion/react";
 import { IconBrandNextjs, IconBrandReact, IconBrandTailwind } from "@tabler/icons-react";
 
 
@@ -53,12 +53,10 @@ export default function Home() {
 
       const ref = useRef(null);
       const isInView = useInView(ref,
-        {margin: "-100px"}
+        {margin: "-150px"}
       );
-    
-      useEffect(() => {
-        console.log(isInView);
-      }, [isInView]);
+
+      const { scrollYProgress } = useScroll()
     
 
   return (
@@ -68,11 +66,10 @@ export default function Home() {
       <HeroParallax products={products} />
       <Spacer size="xl" />
       <div ref={ref} className="px-[15vw] mb-[10vh]">
-        <h1 className="text-4xl font-bold font-caption text-center text-accent-foreground mb-[15vh] ">Project Portfolio Next.js</h1>
-        <motion.div className="border-blue-500 h-0.5"
-        animate={{
-          width: isInView ? "100%" : "0%"
-        }} />
+        <h1 className="text-4xl font-bold font-caption text-center text-accent-foreground mb-[15px] ">Project Portfolio Next.js</h1>
+        <motion.div className="bg-blue-500 h-0.5 w-full"
+        style={{ scaleX: isInView ? scrollYProgress : 0, opacity: isInView ? 1 : 0 }}
+         />
       </div>
       <TechnologiesUsed />
       <Spacer size="xl"/>
