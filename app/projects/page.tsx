@@ -1,6 +1,5 @@
 "use client";
 import { Header } from "../_components/Header";
-import { Status } from "../_components/Status";
 import { Spacer } from "../_components/Spacer";
 import Head from 'next/head';
 import { Footer } from "../_components/Footer";

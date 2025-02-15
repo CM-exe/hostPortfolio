@@ -60,7 +60,7 @@ export const Status = () => {
         <Section className="flex max-md:flex-col gap-4 items-start">
             <div className="flex-[3] h-full">
             <Card className="p-4">
-                <p className="pb-1">Project structure</p>
+                <p className="pb-1">The beginning of the list of my projects</p>
                 <div className="flex flex-col gap-2 overflow-y-auto max-h-[50]">
                     <Project {...PROJECTS[0]} />
                     <Project {...PROJECTS[1]} />

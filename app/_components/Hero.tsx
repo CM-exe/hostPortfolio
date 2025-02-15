@@ -25,6 +25,7 @@ export const Hero = () => {
                     duration: 0.8,
                     ease: "easeInOut",
                     repeat: 0,
+                    once: true,
                     }}
                     className="font-caption font-semibold text-2xl mb-3 min-w-screen"
                 >

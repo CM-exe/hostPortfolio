@@ -63,7 +63,14 @@ export const Header = () => {
 
     return(
         <>
-        <header className="sticky top-0 md:py-4 py-2 w-full z-40 invisible md:visible">
+        <header className="sticky top-0 md:py-4 py-2 w-full z-40 invisible md:visible"
+        style={{
+          backgroundColor: 'transparent',
+          backgroundImage:  'linear-gradient(315deg, hsl(var(--background)) 70%, transparent 30%)',
+          backgroundSize: '4px 4px', // Adjust the size of the triangles
+          backdropFilter: 'blur(3px)',
+          maskImage: 'linear-gradient(rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%)',
+        }}>
             <section className="inline-flex items-baseline w-full px-5 md:px-40 m-auto">
                 <h1 className="text-lg font-bold font-caption text-primary ml-0 mr-auto">Clémo.com</h1>
                 <ul className="flex items-center gap-2 mr-0 ml-auto">

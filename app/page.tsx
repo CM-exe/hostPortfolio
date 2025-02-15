@@ -40,19 +40,19 @@ export default function Home() {
     {
       title: "What I can bring to you",
       description: "What should you choose me for your projects ?",
-      header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-red-700 to-yellow-500"><UserRoundPlus size={100} color="white" className="m-auto" /></div>,
+      header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-700 to-neutral-900"><UserRoundPlus size={100} color="white" className="m-auto" /></div>,
       icon: <IconBriefcase className="h-4 w-4 text-muted-foreground" />,
     },
     {
       title: "How to contact me ?",
       description: "Experience my contact form and get in touch with me.",
-      header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-blue-700 to-purple-700"><MailPlus size={100} color="white" className="m-auto" /></div>,
+      header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-300 to-neutral-600"><MailPlus size={100} color="white" className="m-auto" /></div>,
       icon: <IconMailFast className="h-4 w-4 text-muted-foreground" />,
     },
     {
       title: "My portfolio made with labour",
       description: "Explore and travel through my portfolio.",
-      header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-lime-600 to-orange-600"><ArrowRightFromLine size={100} color="white" className="m-auto" /></div>,
+      header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-600 to-neutral-400"><ArrowRightFromLine size={100} color="white" className="m-auto" /></div>,
       icon: <IconStepInto className="h-4 w-4 text-muted-foreground" />,
     },
   ];

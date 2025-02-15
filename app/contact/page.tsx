@@ -52,7 +52,7 @@ export default function Home() {
         </Head>
         <Header />
         <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
-            <h2 className="bg-clip-text text-accent-foreground text-center md:text-4xl lg:text-7xl font-sans pt-2 pb-1 md:pt-5 md:pb-3 relative z-20 font-bold tracking-tight">
+            <h2 className="bg-clip-text text-accent-foreground text-center text-2xl md:text-4xl lg:text-7xl font-sans pt-2 pb-1 md:pt-5 md:pb-3 relative z-20 font-bold tracking-tight">
                 Form for contacting me
             </h2>
             <p className="max-w-2xl mx-auto text-sm md:text-lg text-center -z-[60]">
@@ -60,9 +60,9 @@ export default function Home() {
                 Have a happy day!
             </p>
             <Spacer />
-            <Section className="z-20 mt-0 max-md:min-h-[90vh]">
+            <Section className="z-20 mt-0">
                 <form onSubmit={handleSendEmail}>
-                    <div className="flex gap-5">
+                    <div className="flex flex-col md:flex-row gap-5">
                     <UserRound size={24} className="my-auto" />
                     <Card className="flex p-4 flex-1">
                     <label htmlFor="name" className="my-auto mr-5 w-full">Name</label>

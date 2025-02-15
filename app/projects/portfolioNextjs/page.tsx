@@ -56,8 +56,9 @@ export default function Home() {
         {margin: "-150px"}
       );
 
-      const { scrollYProgress } = useScroll()
-    
+      const { scrollYProgress } = useScroll();
+
+      const widthProgressBar = useSpring(scrollYProgress, { stiffness: 400, damping: 90 });
 
   return (
     <main>
@@ -65,10 +66,12 @@ export default function Home() {
       <Spacer size="xs" />
       <HeroParallax products={products} />
       <Spacer size="xl" />
-      <div ref={ref} className="px-[15vw] mb-[10vh]">
+      <div ref={ref} className="px-[15vw] mb-[15vh]">
         <h1 className="text-4xl font-bold font-caption text-center text-accent-foreground mb-[15px] ">Project Portfolio Next.js</h1>
         <motion.div className="bg-blue-500 h-0.5 w-full"
-        style={{ scaleX: isInView ? scrollYProgress : 0, opacity: isInView ? 1 : 0 }}
+          style={{ scaleX: widthProgressBar }}
+          
+        /* style={{ scaleX: isInView ? scrollYProgress : 0.5, opacity: isInView ? 1 : 0.2 }} */
          />
       </div>
       <TechnologiesUsed />

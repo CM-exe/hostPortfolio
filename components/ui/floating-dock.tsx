@@ -67,11 +67,12 @@ export const FloatingDockMobile = ({
                   },
                 }}
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
+                whileHover={{ scale: 1.1 }}
               >
                 <TransitionLink
                   href={item.href}
                   key={item.title}
-                  className="h-10 w-10 rounded-full bg-background border-muted border flex items-center justify-center"
+                  className="h-10 w-10 rounded-full bg-background border-muted border hover:border-white flex items-center justify-center"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
                 </TransitionLink>
