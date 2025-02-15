@@ -73,7 +73,7 @@ export const FoldableCardCustomisable = ({url, title}:{url : string, title: stri
 
     useMotionValueEvent(xDrag, "change", (currentX) => {
         if (currentX > 260) {
-            setIsFolded(false);            
+            setIsFolded(false);        
         } else {
             setIsFolded(true);
         }

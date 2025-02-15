@@ -63,7 +63,7 @@ export default function Home() {
             <Section className="z-20 mt-0">
                 <form onSubmit={handleSendEmail}>
                     <div className="flex flex-col md:flex-row gap-5">
-                    <UserRound size={24} className="my-auto" />
+                    <UserRound size={24} className="my-auto max-md:mx-auto" />
                     <Card className="flex p-4 flex-1">
                     <label htmlFor="name" className="my-auto mr-5 w-full">Name</label>
                     <input type="text" name="name" placeholder="Your name" className="flex-1 bg-background text-accent-foreground active:bg-background/20 active:text-accent-foreground focus:bg-background/20 focus:text-accent-foreground" required />

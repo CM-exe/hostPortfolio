@@ -59,7 +59,7 @@ export const NextParallax = ({title} : {title : string}) => {
 };
 
 
-
+/* 
 function useParallax(value: MotionValue<number>, distance: number) {
     return useTransform(value, [0, 1], [-distance, distance])
 }
@@ -105,10 +105,6 @@ export default function Parallax() {
         </div>
     )
 }
-
-/**
- * ==============   Styles   ================
- */
 
 function StyleSheet() {
     return (
@@ -177,3 +173,4 @@ function StyleSheet() {
     `}</style>
     )
 }
+ */

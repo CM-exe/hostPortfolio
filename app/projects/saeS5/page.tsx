@@ -10,6 +10,8 @@ import { Spotlight } from "@/components/ui/spotlight";
 import { Code } from "@/app/_components/Hero";
 import { Footer } from "@/app/_components/Footer";
 import { LaravelParallax } from "@/components/ui/logo-parallax";
+import { SectionLogo } from "@/components/ui/custom-component";
+import { IconBrandNextjs } from "@tabler/icons-react";
 
 
 export default function Home() {
@@ -115,7 +117,28 @@ export default function Home() {
         <h2 className="font-caption text-4xl font-bold mt-[20vh] text-center">Additional Section</h2>
         <p>This is some additional content for the page.</p>
       </Section>
-      <Spacer size="xs" />
+      <Spacer size="xl" />
+      <SectionLogo logo={<IconBrandNextjs size={100} className="text-accent-foreground" />} valAdjust={420}>
+        <Section>
+        <h1 className="text-2xl font-bold font-caption text-center text-accent-foreground">Technologies used</h1>
+        <p className="text-lg text-accent-foreground">
+          The project was made with the Laravel framework. Laravel is a PHP framework that allows the creation of web applications. It is a very powerful framework that allows the creation of web applications quickly and efficiently.
+        </p>
+        <h2 className="text-xl font-bold font-caption text-center text-accent-foreground">Laravel</h2>
+        <p className="text-lg text-accent-foreground">
+          Laravel is a PHP framework that allows the creation of web applications. It is a very powerful framework that allows the creation of web applications quickly and efficiently.
+        </p>
+        <h2 className="text-xl font-bold font-caption text-center text-accent-foreground">PHP</h2>
+        <p className="text-lg text-accent-foreground">
+          PHP is a programming language that is widely used in web development. It is a very powerful language that allows the creation of web applications quickly and efficiently.
+        </p>
+        <h2 className="text-xl font-bold font-caption text-center text-accent-foreground">HTML</h2>
+        <p className="text-lg text-accent-foreground">
+          HTML is a markup language that is used to create web pages. It is a very powerful language that allows the creation of web pages quickly and efficiently.
+        </p>
+        </Section>
+      </SectionLogo>
+      <Spacer size="xl" />
       <Footer />
     </main>
   );

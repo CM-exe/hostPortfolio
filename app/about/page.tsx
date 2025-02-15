@@ -203,7 +203,7 @@ export default function Home() {
               Baccalauréat général
             </h2>
             <p className="text-left  mt-4">
-            General baccalaureate specializing in mathematics, engineering sciences and computer science<br/>European Maths/English section and expert maths option with very good honors. <i>(it's not the real one for legal reasons)</i>
+            General baccalaureate specializing in mathematics, engineering sciences and computer science<br/>European Maths/English section and expert maths option with very good honors. <i>(it&apos;s not the real one for legal reasons)</i>
             </p>
           </motion.div>
         </div>
