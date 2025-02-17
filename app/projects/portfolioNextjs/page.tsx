@@ -7,6 +7,7 @@ import { Footer } from "@/app/_components/Footer";
 import { useEffect, useRef } from "react";
 import { motion, useInView, useScroll, useSpring } from "motion/react";
 import { IconBrandNextjs, IconBrandReact, IconBrandTailwind } from "@tabler/icons-react";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 
 export default function Home() {
@@ -77,6 +78,9 @@ export default function Home() {
       <TechnologiesUsed />
       <Spacer size="xl"/>
       <Status />
+      <Spacer size="xl"/><Spacer size="xl"/>
+      <ScrollArea />
+      <Spacer size="xl"/>
       <Footer />
     </main>
   );
