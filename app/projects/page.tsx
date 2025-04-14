@@ -10,6 +10,7 @@ import { LaravelIcon } from "../_components/icons/LaravelIcon";
 import { NextjsIcon } from "../_components/icons/NextjsIcon";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
+import { IconBrandLaravel, IconBrandPhp, IconNumber2, IconNumber3 } from "@tabler/icons-react";
 
 export default function Home() {
   return (
@@ -36,15 +37,14 @@ export default function Home() {
               <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base">
                 Project of SAÉ S3
               </h3>
-              <div className="text-sm !m-0 !p-0 font-normal">
+              <div className="text-sm !m-0 !p-0 font-normal text-justify">
                 <span>
-                  The project in <Code><LaravelIcon size={16} /> code</Code> is a project that I made during my second year of IUT school.
+                  The project in <Code><IconBrandPhp size={16} /> code</Code> is a project that I made during my second year of IUT school.
                   It is a project that I made with a team of 5 people.
-                  The goal of this project was to create a web application that allows the user to create a schedule for the week.
-                  The user can add courses, delete them, modify them, and see the schedule in a calendar view.
+                  The goal of this project was to create a web application that allows the user to create events or join them and discover suggestions from few words describing yourself.
                 </span>
               </div>
-              <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+              <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-black via-neutral-800 to-neutral-900 text-center pt-3" ><IconNumber2 size={50} className="ml-auto my-auto"/>nd year of BUT - <IconBrandPhp size={65} className="mr-auto my-auto"/></div>
             </div>
           </PinContainer>
           <PinContainer
@@ -55,7 +55,7 @@ export default function Home() {
               <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base">
                 Portfolio in Nextjs, React, Tailwind CSS
               </h3>
-              <div className="text-sm !m-0 !p-0 font-normal">
+              <div className="text-sm !m-0 !p-0 font-normal text-justify">
                 <span>
                   The project in <Code><NextjsIcon size={16} /> code</Code> is a personnal project that I made during my third year of IUT school.
                   It is a project that I made alone.
@@ -63,7 +63,7 @@ export default function Home() {
                   The portfolio is made with Nextjs, React and Tailwind CSS.
                 </span>
               </div>
-              <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-red-700 via-orange-600 to-yellow-400" />
+              <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-red-700 via-orange-600 to-yellow-400 text-center"><p className="m-auto text-xl font-bold">Personnal Portfolio</p></div>
             </div>
           </PinContainer>
           </div>
@@ -76,7 +76,7 @@ export default function Home() {
               <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base">
                 Project of SAÉ S5
               </h3>
-              <div className="text-sm !m-0 !p-0 font-normal">
+              <div className="text-sm !m-0 !p-0 font-normal text-justify">
                 <span>
                   The project in <Code><LaravelIcon size={16} /> code</Code> is a project that I made during my third year of IUT school.
                   It is a project that I made with a team of 5 people.
@@ -84,7 +84,7 @@ export default function Home() {
                   The user can add courses, delete them, modify them, and see the schedule in a calendar view.
                 </span>
               </div>
-              <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+              <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500"><IconNumber3 size={50} className="ml-auto my-auto"/>rd year of BUT - <IconBrandLaravel size={65} className="mr-auto my-auto"/></div>
             </div>
           </PinContainer>
           </div>
