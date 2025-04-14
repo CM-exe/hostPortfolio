@@ -104,15 +104,14 @@ export const ContentHeroParallax = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0 z-30">
       <h1 className="text-2xl md:text-7xl font-bold">
-        Multiple helpful websites <br/> for creating my portfolio
+        Creating portfolio from my  <br/> own using multiple websites
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8">
+      <p className="max-w-2xl text-base md:text-xl mt-8 text-justify">
         I am building a portfolio website using Next.js, React, and Tailwind CSS.
-        It will showcase multiple helpful websites that I have created.
-        Each website will be represented by a product card, displaying the title, thumbnail, and a link to the website.
-        The product cards will be arranged in three rows, with different animations applied to each row as the user scrolls.
-        The animations include translation, rotation, opacity, and perspective effects.
-        The content of the hero section, including the title and description, will be displayed above the product cards.
+        I am also using Framer Motion for animations and transitions. The website is
+        designed to be responsive and user-friendly. I am having fun by making using all the
+        possibilities of Next.js and React. I am also using Tailwind CSS for styling.
+        I use animations that I can find or make myself.
       </p>
     </div>
   );

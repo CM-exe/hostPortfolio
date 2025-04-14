@@ -13,43 +13,66 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 export default function Home() {
 
     const products = [
-        {
-          title: "Next.js",
-          link: "https://nextjs.org/",
-          thumbnail:
-            "https://assets-global.website-files.com/64ef65e1e3180ded19ec7878/6526970c6f3e0e18a4e0f5bb_import-svgs-next-js-app.webp",
-        },
-        {
-          title: "React",
-          link: "https://react.dev/",
-          thumbnail:
-            "https://th.bing.com/th/id/OIP.BAwJnB3maWaRiZsXTXTmcwHaEK?rs=1&pid=ImgDetMain",
-        },
-        {
-          title: "Tailwind css",
-          link: "https://tailwindcss.com/",
-          thumbnail:
-            "https://th.bing.com/th/id/OIP.B9sXYF-aegyoGBlVpmyOFgHaEK?rs=1&pid=ImgDetMain",
-        },
-       
-        {
-          title: "Framer Motion",
-          link: "https://motion.dev/",
-          thumbnail:
-            "https://images.ctfassets.net/m67spjpkfcu8/22n4lPtkTn7J3x5Y1pkuhI/3d66e01266e07266cde202c764f64bf6/motion.png",
-        },
-        {
-          title: "Aceternity UI",
-          link: "https://ui.aceternity.com",
-          thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
-        },
-        {
-          title: "Tailwind Master Kit",
-          link: "https://tailwindmasterkit.com",
-          thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
-        },
+      {
+        title: "Next.js",
+        link: "https://nextjs.org/",
+        thumbnail:
+        "https://assets-global.website-files.com/64ef65e1e3180ded19ec7878/6526970c6f3e0e18a4e0f5bb_import-svgs-next-js-app.webp",
+      },
+      {
+        title: "React",
+        link: "https://react.dev/",
+        thumbnail:
+        "https://th.bing.com/th/id/OIP.BAwJnB3maWaRiZsXTXTmcwHaEK?rs=1&pid=ImgDetMain",
+      },
+      {
+        title: "Tailwind css",
+        link: "https://tailwindcss.com/",
+        thumbnail:
+        "https://th.bing.com/th/id/OIP.B9sXYF-aegyoGBlVpmyOFgHaEK?rs=1&pid=ImgDetMain",
+      },
+      {
+        title: "Framer Motion",
+        link: "https://motion.dev/",
+        thumbnail:
+        "https://images.ctfassets.net/m67spjpkfcu8/22n4lPtkTn7J3x5Y1pkuhI/3d66e01266e07266cde202c764f64bf6/motion.png",
+      },
+      {
+        title: "Aceternity UI",
+        link: "https://ui.aceternity.com",
+        thumbnail:
+        "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+      },
+      {
+        title: "Tailwind Master Kit",
+        link: "https://tailwindmasterkit.com",
+        thumbnail:
+        "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+      },
+      {
+        title: "TypeScript",
+        link: "https://www.typescriptlang.org/",
+        thumbnail:
+        "https://cdn.sanity.io/images/nrxsmjzk/production/2243fb2527b0b01633620965d60f6f45edc5cf8a-1240x698.png",
+      },
+      {
+        title: "Vercel",
+        link: "https://vercel.com/",
+        thumbnail:
+        "https://miro.medium.com/v2/resize:fit:1200/1*u1IkXnSmr4RR4_I6XaSrHg.jpeg",
+      },
+      {
+        title: "Chakra UI",
+        link: "https://chakra-ui.com/",
+        thumbnail:
+        "https://www.figma.com/community/resource/1aa69377-446e-4321-9174-0dc7bfe969b5/thumbnail",
+      },
+      {
+        title: "Storybook",
+        link: "https://storybook.js.org/",
+        thumbnail:
+        "https://raw.githubusercontent.com/storybookjs/brand/main/logo/logo-storybook-default.svg",
+      },
       ];
 
       const ref = useRef(null);
@@ -68,6 +91,7 @@ export default function Home() {
       <HeroParallax products={products} />
       <Spacer size="xl" />
       <div ref={ref} className="px-[15vw] mb-[15vh]">
+        <h2 className="text-3xl font-bold font-caption text-center text-accent-foreground"> Technologies I have used in my</h2>
         <h1 className="text-4xl font-bold font-caption text-center text-accent-foreground mb-[15px] ">Project Portfolio Next.js</h1>
         <motion.div className="bg-blue-500 h-0.5 w-full"
           style={{ scaleX: widthProgressBar }}
@@ -76,10 +100,11 @@ export default function Home() {
          />
       </div>
       <TechnologiesUsed />
-      <Spacer size="xl"/>
-      <Status />
+      
       <Spacer size="xl"/><Spacer size="xl"/>
       <ScrollArea />
+      <Spacer size="xl"/>
+      <Status />
       <Spacer size="xl"/>
       <Footer />
     </main>
