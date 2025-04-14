@@ -21,7 +21,7 @@ export const Footer = () => {
             <Spacer size="xs" />  
             <div className="container mx-auto flex justify-between items-center">
                 <div>
-                    <h2 className="md:text-xl text-sm font-bold font-caption">Portfolio de Clément MOURGUE</h2>
+                    <h2 className="md:text-xl text-sm font-bold font-caption">Portfolio of Clément MOURGUE</h2>
                     <p className="md:text-base text-xs text-accent-foreground">© 2025 Clément MOURGUE</p>
                 </div>
                 <AnimatedTooltip items={me} />

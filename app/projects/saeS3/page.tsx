@@ -8,7 +8,8 @@ import { Section } from "@/app/_components/Section";
 import Head from "next/head";
 import { motion, useInView, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
-import { IconBrandLaravel } from "@tabler/icons-react";
+import { IconBrandLaravel, IconBrandPhp } from "@tabler/icons-react";
+import { MaskContainer } from "@/components/ui/svg-mask-effect";
  
 
 export default function Home() {
@@ -65,17 +66,10 @@ export default function Home() {
       whileInView={"rightRotating"}
       className="w-fit mx-auto"
       viewport={{ margin: "-250px" }}>
-        <IconBrandLaravel size={100} className="m-auto" />
+        <IconBrandPhp size={100} className="m-auto" />
       </motion.div>
       <Section>
         <h1 className="text-2xl font-bold font-caption text-center text-accent-foreground">Technologies used</h1>
-        <p className="text-lg text-accent-foreground">
-          The project was made with the Laravel framework. Laravel is a PHP framework that allows the creation of web applications. It is a very powerful framework that allows the creation of web applications quickly and efficiently.
-        </p>
-        <h2 className="text-xl font-bold font-caption text-center text-accent-foreground">Laravel</h2>
-        <p className="text-lg text-accent-foreground">
-          Laravel is a PHP framework that allows the creation of web applications. It is a very powerful framework that allows the creation of web applications quickly and efficiently.
-        </p>
         <h2 className="text-xl font-bold font-caption text-center text-accent-foreground">PHP</h2>
         <p className="text-lg text-accent-foreground">
           PHP is a programming language that is widely used in web development. It is a very powerful language that allows the creation of web applications quickly and efficiently.
@@ -84,8 +78,27 @@ export default function Home() {
         <p className="text-lg text-accent-foreground">
           HTML is a markup language that is used to create web pages. It is a very powerful language that allows the creation of web pages quickly and efficiently.
         </p>
+        <h2 className="text-xl font-bold font-caption text-center text-accent-foreground">CSS</h2>
+        <p className="text-lg text-accent-foreground">
+          CSS is a style sheet language that is used to describe the presentation of a document written in HTML. It is a very powerful language that allows the creation of web pages quickly and efficiently.
+        </p>
       </Section>
       </div>
+      <Spacer size="xl"/>
+      <MaskContainer
+        revealText={
+          <p className="mx-auto max-w-4xl text-center text-4xl font-bold text-accent-foreground">
+            The first rule of MRR Club is you do not talk about MRR Club. The
+            second rule of MRR Club is you DO NOT talk about MRR Club.
+          </p>
+        }
+        className="h-[40rem] rounded-md border text-background"
+      >
+        Discover the power of{" "}
+        <span className="text-blue-500">Tailwind CSS v4</span> with native CSS
+        variables and container queries with
+        <span className="text-blue-500">advanced animations</span>.
+      </MaskContainer>
       <Spacer size="xl"/>
       <Status />
       <Footer />
