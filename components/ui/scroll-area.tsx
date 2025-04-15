@@ -4,11 +4,11 @@ export const ScrollArea = () => {
 
     useEffect(() => {
         rotateCards();
-        let stackArea = document.getElementById("stackArea");
-        let cards = document.querySelectorAll(".card-to-move");        
+        const stackArea = document.getElementById("stackArea");
+        const cards = document.querySelectorAll(".card-to-move");        
         window.addEventListener("scroll", () => {
-            let distance = window.innerHeight /2;
-            let topVal = stackArea?.getBoundingClientRect().top;
+            const distance = window.innerHeight /2;
+            const topVal = stackArea?.getBoundingClientRect().top;
             let index = topVal ? -1 * (topVal/distance + 1) : 0;
             index = Math.floor(index);
             cards.forEach((card, i) => {
@@ -67,7 +67,7 @@ export const ScrollArea = () => {
 
 function rotateCards() {
     let angle = 0;
-    let cards = document.querySelectorAll(".card-to-move");    
+    const cards = document.querySelectorAll(".card-to-move");    
     cards.forEach((card, index) => {
         if((card as HTMLElement).classList.contains("away")) {
             (card as HTMLElement).style.transform = `translateY(-120vh) rotate(-48deg)`;

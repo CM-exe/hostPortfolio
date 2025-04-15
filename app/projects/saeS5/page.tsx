@@ -83,7 +83,7 @@ export default function Home() {
         </div>
         <Spacer />
       <Section>
-            <h4 className="font-caption text-2xl mb-3 text-justify"><Code>SAÉ</Code> or Situation d&apos;Apprentissage Évalué in french is a project in autonomy in group of 5 students durint the BUT studies that's takes place all long a year and has to make us use the skills we've learned.</h4>
+            <h4 className="font-caption text-2xl mb-3 text-justify"><Code>SAÉ</Code> or Situation d&apos;Apprentissage Évalué in french is a project in autonomy in group of 5 students durint the BUT studies that&apos;s takes place all long a year and has to make us use the skills we&apos;ve learned.</h4>
         </Section>
       {/* <Spacer />
        <LaravelParallax title="Laravel" /> 
