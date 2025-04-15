@@ -36,7 +36,7 @@ export default function Home() {
     },
   };
 
-  const scrollY = useTransform(scrollYProgress, [0, 1], [500, 0]); // Adjust values as needed to control movement
+  const scrollY = useTransform(scrollYProgress, [0, 1], [400, 0]); // Adjust values as needed to control movement
 
   return (
     <main>
@@ -52,7 +52,7 @@ export default function Home() {
       <Spacer/>
       <Section>
         <h1 className="text-2xl font-bold font-caption text-center text-accent-foreground">Introduction</h1>
-        <p className="text-lg text-accent-foreground">
+        <p className="text-lg text-accent-foreground text-justify">
           SAÉ S3 is a project of a web application that allows the management of the student&apos;s academic path. It is a project that I carried out during my third year of study at the University of Technology of Bayonne and Basque country. This project was carried out in a team of 5 students. The project was carried out in 3 months.
         </p>
       </Section>
@@ -68,7 +68,7 @@ export default function Home() {
       viewport={{ margin: "-250px" }}>
         <IconBrandPhp size={100} className="m-auto" />
       </motion.div>
-      <Section>
+      <Section className="text-justify">
         <h1 className="text-2xl font-bold font-caption text-center text-accent-foreground">Technologies used</h1>
         <h2 className="text-xl font-bold font-caption text-center text-accent-foreground">PHP</h2>
         <p className="text-lg text-accent-foreground">
@@ -88,16 +88,15 @@ export default function Home() {
       <MaskContainer
         revealText={
           <p className="mx-auto max-w-4xl text-center text-4xl font-bold text-accent-foreground">
-            The first rule of MRR Club is you do not talk about MRR Club. The
-            second rule of MRR Club is you DO NOT talk about MRR Club.
+            It&apos;s the first time we made a serious project with a team of 5 people
+            and we are very happy of what we achieved.
           </p>
         }
-        className="h-[40rem] rounded-md border text-background"
+        className="h-[40rem] rounded-md text-background"
       >
-        Discover the power of{" "}
-        <span className="text-blue-500">Tailwind CSS v4</span> with native CSS
-        variables and container queries with
-        <span className="text-blue-500">advanced animations</span>.
+        Thanks to
+        <span className="text-blue-800">Yannis, Mattin, Dylan and Lucas</span> for their help.
+        It&apos;s the similarly the same <span className="text-blue-800">team</span> for my other studies projects.
       </MaskContainer>
       <Spacer size="xl"/>
       <Status />
