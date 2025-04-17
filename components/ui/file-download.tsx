@@ -27,7 +27,7 @@ const secondaryVariant = {
 export const FileDownload = () => {
 
   const downloadFile = () => {
-    const fileUrl = "/CV_MOURGUE.pdf";
+    const fileUrl = "../public/CV_MOURGUE.pdf";
     const link = document.createElement("a");
     link.href = fileUrl;
     link.download = "CV_MOURGUE.pdf";
