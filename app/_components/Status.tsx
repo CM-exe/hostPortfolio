@@ -6,6 +6,7 @@ import { TransitionLink } from "./TransitionLink";
 import { cn } from "@/lib/utils";
 import { NextjsIcon } from "./icons/NextjsIcon";
 import { FileDownload } from "@/components/ui/file-download";
+import { IconBrandPhp } from "@tabler/icons-react";
 
 export const Laravel = (props: {size?: number}) => (
     <svg xmlns="http://www.w3.org/2000/svg" width={props.size} viewBox="0 0 24 24" {...props}>
@@ -21,7 +22,7 @@ const PROJECTS = [
         url: "/projects/saeS5",
     },
     {
-        icone: GitCompareArrows,
+        icone: IconBrandPhp,
         title: "Project SAÉ S3",
         description: "Description of project SAÉ S3",
         url: "/projects/saeS3",

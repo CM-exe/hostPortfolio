@@ -101,11 +101,11 @@ export default function Home() {
       </div>
       <TechnologiesUsed />
       
-      <Spacer size="xl"/><Spacer size="xl"/>
+      <Spacer size="xl"/>
       <ScrollArea />
-      <Spacer size="xl"/>
+      <Spacer size="lg"/>
       <Status />
-      <Spacer size="xl"/>
+      <Spacer />
       <Footer />
     </main>
   );

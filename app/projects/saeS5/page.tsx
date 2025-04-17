@@ -14,6 +14,7 @@ import { SectionLogo } from "@/components/ui/custom-component";
 import { IconBrandLaravel, IconBrandNextjs } from "@tabler/icons-react";
 import { ThreeDMarquee } from "@/components/ui/3d-marquee";
 import { cn } from "@/lib/utils";
+import { Status } from "@/app/_components/Status";
 
 
 export default function Home() {
@@ -141,6 +142,7 @@ export default function Home() {
       </p>
       </Section>
       <Spacer />
+      <Status />
       <Footer />
     </main>
   );

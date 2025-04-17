@@ -154,10 +154,15 @@ export default function Home() {
       title: "2024-2025 (BUT3)",
       content: (
         <div>
-          <p className="text-accent-foreground text-base md:text-xl font-normal mb-8">
+          <p className="text-accent-foreground text-base md:text-xl font-normal mb-8 text-justify">
             I am currently in my third year of university at the Université de Bayonne et du Pays Basque.
+            It is the year in the which we pass our diplom and confirm the knowledge and skills we&apos;ve learned.
+            I have dsicover those technologies :
           </p>
             <FocusCards cards={dataBut3} />
+          <p className="text-accent-foreground text-base md:text-xl font-normal mb-8 text-justify">
+            The competencies the B.U.T. is centered around are <b>Development</b>,<b>Optimisation</b>,<b>Team Working</b>.
+          </p>
         </div>
       ),
     },

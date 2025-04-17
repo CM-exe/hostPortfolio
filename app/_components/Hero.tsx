@@ -31,7 +31,7 @@ export const Hero = () => {
                 >
                     Student at IUT de Bayonne et du Pays Basque
                 </motion.h4>
-            <p className="text-lg max-w-4xl">
+            <p className="text-lg max-w-4xl text-justify">
                 Here you can see my portfolio made on my own using technologies <Code><IconBrandNextjs size={16} />Nextjs code</Code>, <Code><IconBrandReact size={16} />React code</Code> and <Code><IconBrandTailwind size={16} />Tailwind CSS code</Code>.
                 <br/>I used all that technologies to make my portfolio and to show you my projects while growing up in competences.
                 So, I can tell ...
