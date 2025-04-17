@@ -96,7 +96,7 @@ export default function Home() {
       >
         Thanks to
         <span className="text-blue-800">Yannis, Mattin, Dylan and Lucas</span> for their help.
-        It&apos;s the similarly the same <span className="text-blue-800">team</span> for my other studies projects.
+        It&apos;s similarly the same <span className="text-blue-800">team</span> for my other studies projects.
       </MaskContainer>
       <Spacer size="xl"/>
       <Status />
